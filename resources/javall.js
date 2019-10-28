@@ -26,6 +26,6 @@ var shortcon = $("<link>", {rel :'shortcut icon',href:'/resources/img/favicon.ic
 $('head').append(shortcon)
 
 // Https
-// if (location.protocol == "http:" && location.port !== "3000" && location.host !== "guusvanmeerveld.online") {
-//   location.protocol = "https:"
-// }
+if (location.protocol == "http:" && location.port !== "3000" && location.host !== "guusvanmeerveld.online") {
+  location.protocol = "https:"
+}

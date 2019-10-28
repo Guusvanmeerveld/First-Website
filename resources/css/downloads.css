@@ -1,0 +1,46 @@
+@media screen and (min-width:0px) and (max-width:1020px) {
+    .downloadbox {
+        width: 93%!important;
+        margin: 25px 0 0 1rem!important;
+        padding: 1rem;
+    }
+    .headerBox {
+      width: 93%!important;
+    }
+}
+/* Headers */
+#livesearch {
+  background-color: #ededed;
+  border: 2px #ededed solid;
+  padding: 1rem;
+  outline: none;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  margin: 4rem 0 -1rem 1rem;
+  width: 98%;
+  display: block;
+  transition: border .4s;
+}
+#livesearch:hover, #livesearch:focus {
+  border: #4c8a80 2px solid;
+}
+/* Classes for blocks */
+.headerBox {
+  width: 94%;
+  height: 5rem;
+  padding: 1rem;
+  margin: 1.5rem 0 0 1rem;
+}
+.downloadbox {
+  width: 18rem;
+  padding: .9rem;
+  max-height: 6rem;
+  margin: 1.5rem 0 0 1.5rem;
+  display: inline-block;
+}
+.img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}

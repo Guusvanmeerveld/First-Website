@@ -1,0 +1,110 @@
+@media screen and (min-width:0px) and (max-width:960px) {
+  #addShortcutMenu {
+    width: 94%!important;
+    left: 1rem!important;
+    margin-left: 0px!important;
+  }
+  #shortcutBox {
+    width: 96%!important;
+    display: block!important;
+    margin-top: 29rem!important;
+    left: 2%;
+    padding: .8rem!important;
+    height: 32rem!important;
+  }
+}
+/* Shortcuts */
+#shortcutBox {
+  margin-top: 3rem;
+  width: 60%;
+  right: 3%;
+  padding: 1rem;
+  position: absolute;
+  height: 50rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#shortcutBox::-webkit-scrollbar {
+  display: none;
+}
+.shortcutImg {
+  width: 3rem;
+  height: 3rem;
+}
+.shortcutImgBox {
+  margin: 0 0 1rem 1rem;
+  width: 12rem;
+  padding: 1rem;
+  background-color: #363840;
+  border: #363840 2px solid;
+  border-radius: .5rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color .5s, border .5s;
+}
+.shortcutImgBox:hover {
+  background-color: #3d3e47;
+  border-color: #3d3e47;
+}
+.shortcutImgBox:hover .removeShortcut {
+  display: inline;
+}
+.shortcutText {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-bottom: 0!important;
+}
+
+/* Shortcut creation menu */
+.hidden {
+  opacity: 0!important;
+}
+.menu {
+  transition: opacity .5s;
+}
+.lowerIndex {
+  z-index: -1!important;
+}
+#opacityMenu {
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  opacity: .7;
+  background-color: black;
+  display: inline-block;
+  z-index: 1;
+}
+#addShortcutMenu {
+  display: inline-block;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  margin-left: -25rem;
+  height: 27rem;
+  width: 50rem;
+  top: 15%;
+}
+#menuTitle {
+  margin: 1rem 0 0 1rem;
+}
+.inputMenu {
+  width: 96%;
+  height: 2.5rem;
+  margin-left: 1rem!important;
+}
+.alignMenu {
+  margin: 2rem 0 0 1rem;
+}
+#shortcutCreateButton {
+  position: absolute;
+  right: 1rem;
+  margin-top: 6rem;
+  padding: .5rem;
+}
+#shortcutCancelButton {
+  position: absolute;
+  right: 7rem;
+  margin-top: 6rem;
+  padding: .5rem;
+}

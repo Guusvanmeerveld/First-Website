@@ -1,0 +1,80 @@
+/* Crosspage styling */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+html {
+  height: 100%;
+}
+img[alt="www.000webhost.com"] {
+    display: none;
+}
+body {
+  font-family: Raleway!important;
+  background-image: url(/resources/img/wallpaper.png);
+  margin: 0px;
+  color: white!important;
+  overflow-x: hidden;
+  min-height: 100%;
+  background-color: #19191C;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    background-color: #1d1e1e;
+    color: #c3c1bd;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2b2c2d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #333536;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #3e4041;
+}
+::-webkit-scrollbar-corner {
+    background-color: #191a1a;
+}
+/* Links */
+a {
+  text-decoration: none!important;
+  color: white!important;
+}
+/* Standard block styling */
+.box {
+  border: 2px #454752 solid;
+  background-color: #454752;
+  box-shadow: 7px 7px #363840;
+  border-radius: .5rem;
+}
+.button {
+  border: 2px #4c8a80 solid;
+  background-color: #4c8a80;
+  color: white;
+  outline: 0!important;
+  border-radius: 0.2rem;
+  transition: border .3s, background-color .3s;
+}
+.button:hover {
+  background-color: #386661;
+  border: #386661 2px solid;
+}
+.cancelButton {
+  border: 2px #b52c22 solid;
+  background-color: #b52c22;
+  color: white;
+  outline: 0!important;
+  border-radius: 0.2rem;
+  transition: border .3s, background-color .3s;
+}
+.cancelButton:hover {
+  background-color: #8a1e16;
+  border: #8a1e16 2px solid;
+}
+.input {
+  border: 0px #363840 solid;
+  background-color: #363840;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  color: white;
+  border-radius: .2rem;
+  padding: 1%;
+  resize: none;
+}

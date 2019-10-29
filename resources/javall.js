@@ -1,11 +1,3 @@
-// 000webhost watermark remover
-addEventListener("load", function() {
-    if (document.querySelector('[alt="www.000webhost.com"]')) {
-        let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-        el.parentNode.removeChild(el);
-    }
-})
-
 // // Tawk
 // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 // (function(){

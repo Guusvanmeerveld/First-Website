@@ -14,9 +14,17 @@
 </head>
 
 <body>
-  <div class="box" style="margin-top:5rem;margin-left:2%;">
-    <h1 align="center">Error: 404</h1>
-    <h1 align="center">Something went wrong, try a different link/address</h1>
+  <div class="box" id="errorBox">
+    <div id="error">
+      <img src="/resources/img/error.png" alt="" id="errorImg">
+      <h1 align="center" id="errorText">Error: 404 <br>You are trying to acces a page that doesn't exist</h1>
+      <p onclick="goBack()" align="center">Click here to go back</p>
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </div>
   </div>
 
   <script src="/resources/js/navbar.json.js"></script>

@@ -6,10 +6,12 @@ function openMenu() {
   d("shortcutName").setAttribute('placeholder', 'Example Website')
 }
 function closeMenu() {
-  setTimeout(function () {
-    $(".menu").addClass("lowerIndex");
-  }, 500)
-  $(".menu").addClass("hidden");
+  if (!d("addShortcutMenu").classList.contains("hidden")) {
+    setTimeout(function () {
+      $(".menu").addClass("lowerIndex");
+    }, 500)
+    $(".menu").addClass("hidden");
+  }
 }
 
 var ls = localStorage

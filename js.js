@@ -1,10 +1,12 @@
 var d = document.getElementById.bind(document);
 var c = document.createElement.bind(document);
+var q = document.querySelector.bind(document);
 
 // Google Search
+addEventListener("keyup",showSearch)
 d("googleSearchBar").addEventListener("keyup",searchGoogleEnter)
 function searchGoogleEnter(key) {
-  if(key.keyCode == "13") {
+  if(key.key == "Enter") {
     var search = d("googleSearchBar").value;
     var containsDot = search.indexOf(".");
     if (search !== "") {
@@ -16,30 +18,32 @@ function searchGoogleEnter(key) {
       }
     }
   }
+  if (key.key == "Escape") {
+    closeSearch()
+  }
 }
 
-// Year left
-function calculateTime() {
-  var date = new Date()
-  var monthsLeft = 11 - date.getMonth()
-  var daysLeft = 31 - date.getDate()
-  if (monthsLeft == 1) {
-    var months = " maand en "
-  }
-  else {
-    var months = " maanden en "
-  }
-  if (daysLeft == 1) {
-    var days = " dag"
-  }
-  else {
-    var days = " dagen"
-  }
-  d("yearLeft").innerHTML = "Het jaar duurt nog " + monthsLeft + months + daysLeft + days
-  d("yearProgress").value = date.getMonth() * 30 + date.getDate()
+function closeSearch() {
+  $("#opacityMenu").addClass("hidden lowerIndex")
+  d("googleSearchBar").blur()
+  d("googleSearchBar").classList.add("searchMove")
 }
 
-calculateTime();
+function showSearch(e) {
+  if (e.target !== document.body || !d("addShortcutMenu").classList.contains("hidden")) {
+    return
+  }
+  var open = !d("googleSearchBar").classList.contains("searchMove")
+  if (open && !d("googleSearchBar").value || e.key == "Escape" ) {
+    closeSearch()
+  }
+  else {
+    $("#opacityMenu").removeClass("hidden lowerIndex")
+    d("googleSearchBar").classList.remove("searchMove")
+    d("googleSearchBar").focus()
+    d("googleSearchBar").value = e.key
+  }
+}
 
 // Clock
 function showTime() {

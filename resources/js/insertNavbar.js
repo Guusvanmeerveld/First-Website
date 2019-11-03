@@ -5,10 +5,10 @@ var g = document.querySelector.bind(document);
 // Insert nav tag
 var navigation = c("nav")
 navigation.className = "navigation"
-var navbarList = c("navbarList")
+var navbarList = c("ul")
 navbarList.className = "navbarList"
 navigation.appendChild(navbarList)
-$("body").append(navigation)
+document.body.appendChild(navigation)
 
 // Create Navbar
 Navbar.forEach(i=>{

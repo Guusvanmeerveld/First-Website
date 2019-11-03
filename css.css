@@ -3,44 +3,10 @@
   width: device-width;
   zoom: 1.0;
 }
-/* Support for smaller screens */
-@media screen and (min-width:0px) and (max-width:430px) {
-  .footerBox {
-    height: 16rem!important;
-  }
-  #feedbackBox {
-    margin-top: 18rem!important;
-  }
-  #feedbackTextarea {
-    height: 16vh!important;
-  }
-  #links {
-    margin-top: 36rem!important;
-  }
-}
 /* Support for normal mobile devices */
 @media screen and (min-width:0px) and (max-width:960px) {
-  #yearBox {
-    width: 96%!important;
-    margin-top: 16rem!important;
-  }
-  .footerBox {
-    display: block!important;
-    width: 96%!important;
-    left: 0px!important;
-  }
-  #feedbackBox {
-    margin-top: 15rem;
-  }
-  #links {
-    margin-top: 30rem;
-  }
-  #footer {
-    top: 71rem!important;
-  }
   #timeBox {
-    display: block;
-    width: 96%!important;
+    width: 94%!important
   }
 }
 /* Main CSS */
@@ -54,24 +20,32 @@ header {
 #googleSearchBar {
 	background-color: #ededed;
 	border: #ededed 2px solid;
+  position: sticky;
+  z-index: 2;
+  top: 6rem;
+  left: calc(50% - 48%);
 	padding: 1rem;
 	width: 96%;
-  margin-top: 5rem;
 	height: 3rem;
   border-radius: 2rem;
   outline: none;
-  transition: border .4s;
+  transition: border .4s, opacity .3s, top .3s;
 }
 #googleSearchBar:hover, #googleSearchBar:focus {
   border: #4c8a80 2px solid;
 }
+.searchMove {
+  opacity: 0;
+  top: 0px!important;
+}
 /* Clock */
 #timeBox {
    margin-top: 3rem;
-   position: absolute;
-   left: 2%;
+   display: inline-block;
+   margin-left: 1rem;
+   float: left;
    padding: 1rem;
-   width: 33%;
+   width: 36%;
 }
 .time {
   display: inline-block;
@@ -80,77 +54,33 @@ header {
 #date {
   font-size: 150%;
 }
-/* How much of the year is left */
-#yearBox {
-  left: 2%;
-  position: absolute;
-  display: inline-block;
-  width: 33%;
-  margin-top: 17rem;
-  padding: 2rem;
-}
-#yearProgress {
-  border-radius: 1rem;
-  width: 98%;
-  height: 1.5rem;
-}
-#yearProgress::-webkit-progress-bar {
-  background-color: #363840;
-  border-radius: .2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-#yearProgress::-webkit-progress-value {
-  border-radius: .2rem;
-  transition: width .5;
-  background-image:
-   -webkit-linear-gradient(-45deg,
-                           transparent 33%, rgba(0, 0, 0, .1) 33%,
-                           rgba(0,0, 0, .1) 66%, transparent 66%),
-   -webkit-linear-gradient(top,
-                           rgba(255, 255, 255, .25),
-                           rgba(0, 0, 0, .25)),
-   -webkit-linear-gradient(left, #09c, #f44);
-}
-#yearProgress::-webkit-progress-value::before {
-  content: '80%';
-  position: absolute;
-  right: 0;
-  top: -125%;
-}
-#yearLeft {
-  font-size: 1.5rem;
-}
 /* Footer */
 #footer {
-	position: absolute;
-  left: 2%;
-  top: 64rem;
-  height: 20%;
+  margin-left: calc(50% - 45rem);
+  margin-top: 2rem;
+  height: 12rem;
 	display: inline-block;
-	width: 100%;
   margin-bottom: 2rem;
 }
 .footerBox::-webkit-scrollbar {
   display: none;
 }
 .footerBox {
-  top: 0px;
-  height: 100%;
+  height: 13rem;
   display: inline-block;
-  position: absolute;
+  float: left;
+  padding: 1rem;
+  margin-left: 2rem;
   overflow: scroll;
   overflow-x: hidden;
 }
 /* Info blocks */
 #info {
-  padding: 1rem;
-  width: 33%;
+  width: 27rem;
 }
 #feedbackBox {
-	padding: 1rem;
-  left: 35%;
 	font-size: 1rem;
-  width: 28%;
+  width: 27rem;
 }
 #feedbackTextarea {
 	width: 98%;
@@ -162,8 +92,7 @@ header {
   margin-top: 4px;
 }
 #links {
-	left: 65%;
-  width: 30%;
+  width: 27rem;
 	padding: 1rem;
 	font-size: 130%;
 }

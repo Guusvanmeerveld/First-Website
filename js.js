@@ -41,7 +41,7 @@ function showSearch(e) {
     $("#opacityMenu").removeClass("hidden lowerIndex")
     d("googleSearchBar").classList.remove("searchMove")
     d("googleSearchBar").focus()
-    d("googleSearchBar").value = e.key
+    d("googleSearchBar").value = e.key + d("googleSearchBar").value
   }
 }
 

@@ -10,11 +10,11 @@
   }
 }
 /* Main CSS */
-/* Header */
-header {
-	margin-top: 6rem;
-  color: white;
-  text-shadow: 2px 2px #363840;
+aside {
+  float: left;
+  margin: 3rem 0 0 1rem;
+  display: inline-block;
+  width: 36%;
 }
 /* Google search */
 #googleSearchBar {
@@ -38,14 +38,14 @@ header {
   opacity: 0;
   top: 0px!important;
 }
+/* Welcome */
+#welcome {
+  padding: 1rem;
+}
 /* Clock */
 #timeBox {
-   margin-top: 3rem;
-   display: inline-block;
-   margin-left: 1rem;
-   float: left;
+   margin-top: 2rem;
    padding: 1rem;
-   width: 36%;
 }
 .time {
   display: inline-block;
@@ -55,47 +55,32 @@ header {
   font-size: 150%;
 }
 /* Footer */
-#footer {
-  margin-left: calc(50% - 45rem);
-  margin-top: 2rem;
-  height: 12rem;
-	display: inline-block;
-  margin-bottom: 2rem;
+footer {
+  margin-top: 1rem;
+  float: left;
+	display: flex!important;
+  align-items: stretch;
 }
-.footerBox::-webkit-scrollbar {
+footer div::-webkit-scrollbar {
   display: none;
 }
-.footerBox {
-  height: 13rem;
-  display: inline-block;
-  float: left;
+footer div {
+  flex-grow: 1;
   padding: 1rem;
-  margin-left: 2rem;
+  margin: 1rem;
   overflow: scroll;
   overflow-x: hidden;
 }
 /* Info blocks */
-#info {
-  width: 27rem;
-}
-#feedbackBox {
-	font-size: 1rem;
-  width: 27rem;
-}
-#feedbackTextarea {
+footer div:nth-of-type(2) textarea {
 	width: 98%;
   margin-top: 8px;
   height: 6rem;
 }
-#feedbackSubmitButton {
+footer div:nth-of-type(2) button {
 	width: 98%;
   margin-top: 4px;
 }
-#links {
-  width: 27rem;
-	padding: 1rem;
-	font-size: 130%;
-}
-#links a button {
+footer div:nth-of-type(3) a button {
   margin-bottom: 5px;
 }

@@ -12,9 +12,8 @@
 }
 /* Shortcuts */
 #shortcutBox {
-  margin-top: 3rem;
-  width: 60%;
-  margin-left: 2rem;
+  margin: 3rem 0 0 2%;
+  width: 59%;
   float: left;
   padding: 1rem;
   display: inline-block;
@@ -29,7 +28,7 @@
   width: 3rem;
   height: 3rem;
 }
-.shortcutImgBox {
+#shortcutBox div {
   margin: 0 0 1rem 1rem;
   width: 12rem;
   padding: 1rem;
@@ -83,26 +82,19 @@
   width: 50rem;
   top: 15%;
 }
-#menuTitle {
+#addShortcutMenu h1 {
   margin: 1rem 0 0 1rem;
 }
-.inputMenu {
+#addShortcutMenu input {
   width: 96%;
   height: 2.5rem;
   margin-left: 1rem!important;
 }
-.alignMenu {
+#addShortcutMenu h4 {
   margin: 2rem 0 0 1rem;
 }
-#shortcutCreateButton {
-  position: absolute;
-  right: 1rem;
-  margin-top: 6rem;
-  padding: .5rem;
-}
-#shortcutCancelButton {
-  position: absolute;
-  right: 7rem;
-  margin-top: 6rem;
+#addShortcutMenu button {
+  float: right;
+  margin: 4rem 1rem 0 0;
   padding: .5rem;
 }

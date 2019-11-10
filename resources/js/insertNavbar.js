@@ -16,7 +16,7 @@ Navbar.forEach(i=>{
   navList.className = "navList"
   var navButton = c("button");
     navButton.className = "navbarbutton"
-    navButton.innerHTML = i.name
+    navButton.innerHTML = "<i class='" + i.icon + " fa-lg'></i>" + i.name
   if (i.link) {
     var navLink = c("a");
     navLink.href = i.link
@@ -35,7 +35,7 @@ Navbar.forEach(i=>{
           var dropdownListItem = c("li");
           // Dropdown button
           var dropdownButton = c("button");
-            dropdownButton.innerHTML = d.name
+            dropdownButton.innerHTML = "<i class='" + d.icon + " fa-lg'></i>" + d.name
             dropdownButton.className = "dropdownButton"
           if (d.desc) {
             dropdownButton.title = d.desc

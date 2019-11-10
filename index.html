@@ -18,43 +18,50 @@
 
 <body>
 
-		<!-- Google search -->
-		<input type="text" placeholder="Voer een zoekopdracht of url in" id="googleSearchBar" class="searchMove" spellcheck="false" autocapitalize="off" autocomplete="off">
+	<!-- Google search -->
+	<input type="text" placeholder="Voer een zoekopdracht of url in" id="googleSearchBar" class="searchMove" spellcheck="false" autocapitalize="off" autocomplete="off">
 
-		<!-- Clock -->
-			<div id="timeBox" class="box">
-				<h1 id="hours" class="time"></h1><h1 id="mins" class="time"></h1><h1 id="secs" class="time"></h1> <br>
-				<h1 id="date"></h1>
-			</div>
+	<!-- Welcome -->
+	<aside>
+	<div id="welcome" class="box">
+		<h1 id="timeWelcome">,</h1>
+	</div>
 
-		<!-- Shortcuts -->
+	<!-- Clock -->
+	<div id="timeBox" class="box">
+		<h1 id="hours" class="time"></h1><h1 id="mins" class="time"></h1><h1 id="secs" class="time"></h1> <br>
+		<h1 id="date"></h1>
+	</div>
+</aside>
+
+	<!-- Shortcuts -->
 		<div id="shortcutBox" class="box">
 			<span id="shortcuts">
-				<a href="https://www.youtube.com/" target="_blank"><div class="shortcutImgBox">
+				<a href="https://www.youtube.com/" target="_blank"><div>
 					<img class="shortcutImg" src="/resources/img/youtube.png" alt=""><p class="shortcutText">Youtube</p>
 				</div></a>
-				<a href="https://pantarijn.magister.net" target="_blank"><div class="shortcutImgBox">
+				<a href="https://pantarijn.magister.net" target="_blank"><div>
 					<img class="shortcutImg" src="/resources/img/magister.png" alt=""><p class="shortcutText">Magister</p>
 				</div></a>
-				<a href="https://onedrive.live.com/about/en-us/signin/" target="_blank"><div class="shortcutImgBox">
+				<a href="https://onedrive.live.com/about/en-us/signin/" target="_blank"><div>
 					<img src="/resources/img/onedrive.png" class="shortcutImg" alt=""><p class="shortcutText">Onedrive</p>
 				</div></a>
-				<a href="https://codepanta.nl/login/index.php" target="_blank"><div class="shortcutImgBox">
+				<a href="https://codepanta.nl/login/index.php" target="_blank"><div>
 					<img src="/resources/img/codepanta.png" class="shortcutImg" alt=""><p class="shortcutText">Codepanta</p>
 				</div></a>
-				<a href="https://reddit.com" target="_blank"><div class="shortcutImgBox">
+				<a href="https://reddit.com" target="_blank"><div>
 					<img src="/resources/img/reddit.png" class="shortcutImg" alt=""><p class="shortcutText">Reddit</p>
 				</div></a>
-				<a href="https://open.spotify.com/browse/featured" target="_blank"><div class="shortcutImgBox">
+				<a href="https://open.spotify.com/browse/featured" target="_blank"><div>
 					<img src="/resources/img/spotify.png" class="shortcutImg" alt=""><p class="shortcutText">Spotify</p>
 				</div></a>
-				<a href="https://w3schools.com" target="_blank"><div class="shortcutImgBox">
+				<a href="https://w3schools.com" target="_blank"><div>
 					<img src="/resources/img/w3schools.png" class="shortcutImg" alt=""><p class="shortcutText">W3Schools</p>
 				</div></a>
-				<a href="https://maps.google.com" target="_blank"><div class="shortcutImgBox">
+				<a href="https://maps.google.com" target="_blank"><div>
 					<img src="/resources/img/googlemaps.png" class="shortcutImg" alt=""><p class="shortcutText">Maps</p>
 				</div></a>
-				<a href="https://translate.google.com" target="_blank"><div class="shortcutImgBox">
+				<a href="https://translate.google.com" target="_blank"><div>
 					<img src="/resources/img/googletranslate.png" class="shortcutImg" alt=""><p class="shortcutText">Translate</p>
 				</div></a>
 			</span>
@@ -62,26 +69,26 @@
 		</div>
 
 		<!-- Footer -->
-  	<div id="footer"> <!-- No footer tag used because they suck -->
+  	<footer>
 
-			<!-- Info -->
-				<div id="info" class="box footerBox">
-					<h1 align="center">Info</h1>
+			  <!-- Info -->
+				<div class="box">
+					<h1>Info</h1>
 					<p>Ik ben bezig met het maken van deze website voor een schoolproject. Het doel van deze website is om een handige overzichtelijke pagina te hebben waar je van alles kan vinden.</p>
 				</div>
 
 				<!-- Feedback -->
-				<div id="feedbackBox" class="box footerBox">
+				<div class="box">
 					<b>Hier kunt u feedback voor deze pagina invullen</b> <br>
 					<form action="/" method="get">
-					<textarea placeholder="Vul hier uw feedback in." rows="10" class="input" id="feedbackTextarea" name="feedback"></textarea> <br>
-					<button type="submit" id="feedbackSubmitButton" class="button" title="Stuur uw feedback op">Verstuur</button>
+					<textarea placeholder="Vul hier uw feedback in." rows="10" class="input" name="feedback"></textarea> <br>
+					<button type="submit" class="button" title="Stuur uw feedback op">Verstuur</button>
 					</form>
 			 </div>
 
-			 <!-- Links -->
-				<div id="links" class="box footerBox">
-					<b>Links:</b> <br> <br>
+			  <!-- Links -->
+				<div class="box">
+					<h1>Links:</h1>
 						<a href="https://www.instagram.com/gerda.6/"><button class="btn btn-info">Instagram</button></a>
 						<a href="https://www.youtube.com/channel/UCYuqpoMay5SezCBrA_HKVWQ"><button class="btn btn-danger">Youtube</button></a>
 						<a href="https://www.sololearn.com/Profile/9075320"><button class="btn btn-success">Sololearn</button></a>
@@ -89,20 +96,22 @@
 						<a href="https://www.discord.gg/GJcEYqj"><button class="btn btn-secondary">Discord</button></a>
 	 		 </div>
 
-		</div>
+		</footer>
 
 	<!-- Add shortcut Menu -->
 	<div id="opacityMenu" onclick="closeMenu()" class="menu hidden lowerIndex"></div>
 	<div id="addShortcutMenu" class="box menu hidden lowerIndex">
-		<h1 id='menuTitle'>Maak je eigen shortcut</h1><h4 class='alignMenu'>Bedenk een naam voor je shortcut</h4><br>
-		<input type='text' class='input inputMenu' id='shortcutName'><br>
-		<h4 class='alignMenu'>Geef de link van je shortcut</h4><br>
-		<input type='text' class='input inputMenu' id='shortcutLink'>
+		<h1 id='menuTitle'>Maak je eigen shortcut</h1>
+		<h4>Bedenk een naam voor je shortcut</h4><br>
+		<input type='text' class='input' id='shortcutName'><br>
+		<h4>Geef de link van je shortcut</h4><br>
+		<input type='text' class='input' id='shortcutLink'>
 		<button class='button' onclick="createShortcut()" id='shortcutCreateButton'>Voeg toe</button>
 		<button class="cancelButton" onclick="closeMenu()" id="shortcutCancelButton">Cancel</button>
 	</div>
 
 		<script src="/resources/js/navbar.json.js"></script>
+		<script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script>
 		<script src="/resources/js/insertNavbar.js"></script>
 		<script src="/js.js"></script>
 		<script src="/resources/js/shortcuts.js"></script>

@@ -3,7 +3,6 @@ var c = document.createElement.bind(document);
 var q = document.querySelector.bind(document);
 
 // Google Search
-addEventListener("keyup",showSearch)
 d("googleSearchBar").addEventListener("keyup",searchGoogleEnter)
 function searchGoogleEnter(key) {
   if(key.key == "Enter") {
@@ -23,27 +22,53 @@ function searchGoogleEnter(key) {
   }
 }
 
-function closeSearch() {
-  $("#opacityMenu").addClass("hidden lowerIndex")
-  d("googleSearchBar").blur()
-  d("googleSearchBar").classList.add("searchMove")
-}
-
+addEventListener("keyup",showSearch)
 function showSearch(e) {
   if (e.target !== document.body || !d("addShortcutMenu").classList.contains("hidden")) {
     return
   }
   var open = !d("googleSearchBar").classList.contains("searchMove")
   if (open && !d("googleSearchBar").value || e.key == "Escape" ) {
-    closeSearch()
+    closeSearch();
   }
   else {
-    $("#opacityMenu").removeClass("hidden lowerIndex")
-    d("googleSearchBar").classList.remove("searchMove")
-    d("googleSearchBar").focus()
+    openSearch();
     d("googleSearchBar").value = e.key + d("googleSearchBar").value
   }
 }
+
+function closeSearch() {
+  $("#opacityMenu").addClass("hidden lowerIndex")
+  d("googleSearchBar").blur()
+  d("googleSearchBar").classList.add("searchMove")
+}
+
+function openSearch(e) {
+  $("#opacityMenu").removeClass("hidden lowerIndex")
+  d("googleSearchBar").classList.remove("searchMove")
+  d("googleSearchBar").focus()
+}
+
+// Welcome
+function setWelcome() {
+  var html = d("timeWelcome").innerHTML
+  var date = new Date()
+  if (date.getHours() < 6) {
+    var welcome = "Goedenacht"
+  }
+  else if (date.getHours() > 18) {
+    var welcome = "Goedeavond"
+  }
+  else if (date.getHours() > 12) {
+    var welcome = "Goedemiddag"
+  }
+  else if (date.getHours() > 6) {
+     var welcome = "Goedemorgen"
+  }
+  html = welcome + html
+}
+
+setWelcome();
 
 // Clock
 function showTime() {

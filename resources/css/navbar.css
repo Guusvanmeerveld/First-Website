@@ -1,14 +1,14 @@
 .navigation {
   position: fixed;
   top: 0px;
-  max-height: 55px;
+  height: 55px;
   width: 100%;
-  background-color: black;
-  opacity: 0.8;
+  background-color: #101012;
   z-index: 3;
 }
 .navigation button {
-  padding: 1rem;
+  padding: .5rem;
+  height: 100%;
   transition: color .5s;
   border: 0;
   background-color: transparent;
@@ -26,9 +26,11 @@
 .navList {
   float: left;
 }
+.navigation i {
+  margin: 10px 15px 10px 10px;
+}
 .dropdownList {
-  background-color: black;
-  opacity: 0.8;
+  background-color: #101012;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -41,10 +43,6 @@
 }
 .navigation button:hover {
   color: #9c9c9c!important;
-}
-.home {
-  height: 40px;
-  width: 40px;
 }
 
 /* Switch */

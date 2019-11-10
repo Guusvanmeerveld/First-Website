@@ -3,6 +3,10 @@
 html {
   height: 100%;
 }
+::selection {
+  background: #6ec1b3;
+  color: white;
+}
 body {
   font-family: Raleway, sans-serif!important;
   background-image: url(/resources/img/wallpaper.png);

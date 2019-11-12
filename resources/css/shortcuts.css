@@ -39,11 +39,11 @@
   cursor: pointer;
   transition: background-color .5s, border .5s;
 }
-.shortcutImgBox:hover {
+.shortcutBox div:hover {
   background-color: #3d3e47;
   border-color: #3d3e47;
 }
-.shortcutImgBox:hover .removeShortcut {
+.shortcutBox div:hover .removeShortcut {
   display: inline;
 }
 .shortcutText {

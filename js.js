@@ -38,13 +38,13 @@ function showSearch(e) {
 }
 
 function closeSearch() {
-  $("#opacityMenu").addClass("hidden lowerIndex")
+  $("#opacityMenu").addClass("lowerIndex")
   d("googleSearchBar").blur()
   d("googleSearchBar").classList.add("searchMove")
 }
 
 function openSearch(e) {
-  $("#opacityMenu").removeClass("hidden lowerIndex")
+  $("#opacityMenu").removeClass("lowerIndex")
   d("googleSearchBar").classList.remove("searchMove")
   d("googleSearchBar").focus()
 }

@@ -29,7 +29,7 @@ Navbar.forEach(i=>{
   navList.appendChild(navButton)
   var dropdownList = c("ul")
     dropdownList.className = "dropdownList"
-    dropdownList.style = "display:none;"
+    dropdownList.style = "opacity: 0;"
   if (typeof i.dropdown == "object") {
         i.dropdown.forEach(d=>{
           var dropdownListItem = c("li");

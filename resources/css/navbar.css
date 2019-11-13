@@ -33,13 +33,14 @@
   background-color: #101012;
   margin: 0;
   padding: 0;
+  transition: opacity .5s;
   list-style: none;
 }
 .dropdownButton {
   width: 100%;
 }
 .navList:hover .dropdownList {
-  display: block!important;
+  opacity: 1!important;
 }
 .navigation button:hover {
   color: #9c9c9c!important;

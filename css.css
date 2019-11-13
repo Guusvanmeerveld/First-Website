@@ -1,20 +1,9 @@
-/* Mobile support */
-@viewport {
-  width: device-width;
-  zoom: 1.0;
-}
-/* Support for normal mobile devices */
-@media screen and (min-width:0px) and (max-width:960px) {
-  #timeBox {
-    width: 94%!important
-  }
-}
 /* Main CSS */
 aside {
   float: left;
-  margin: 3rem 0 0 1rem;
   display: inline-block;
   width: 36%;
+  background-color: #454752;
 }
 /* Google search */
 #googleSearchBar {
@@ -41,10 +30,11 @@ aside {
 /* Welcome */
 #welcome {
   padding: 1rem;
+  margin-left: 1rem;
 }
 /* Clock */
 #timeBox {
-   margin-top: 2rem;
+   margin: 2rem 0 0 1rem;
    padding: 1rem;
 }
 .time {
@@ -59,13 +49,11 @@ footer {
   margin-top: 1rem;
   float: left;
 	display: flex!important;
-  align-items: stretch;
 }
 footer div::-webkit-scrollbar {
   display: none;
 }
 footer div {
-  flex-grow: 1;
   padding: 1rem;
   margin: 1rem;
   overflow: scroll;
@@ -83,4 +71,23 @@ footer div:nth-of-type(2) button {
 }
 footer div:nth-of-type(3) a button {
   margin-bottom: 5px;
+}
+/* Mobile support */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+/* Support for normal mobile devices */
+@media screen and (min-width:0px) and (max-width:1000px) {
+  aside {
+    width: 96%!important;
+  }
+  footer {
+    width: 98%!important;
+    display: block!important;
+    margin: 0!important;
+  }
+  footer div {
+    margin-top: 2rem!important;
+  }
 }

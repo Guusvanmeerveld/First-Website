@@ -22,49 +22,52 @@
 	<!-- Google search -->
 	<input type="text" placeholder="Voer een zoekopdracht of url in" id="googleSearchBar" class="searchMove" spellcheck="false" autocapitalize="off" autocomplete="off">
 
-	<aside>
+	<section>
 		<!-- Clock -->
 		<div id="timeBox">
-			<h1 id="hours" class="time"></h1><h1 id="mins" class="time"></h1><h1 id="secs" class="time"></h1><br>
-			<h1 id="date"></h1>
+			<p id="hours" class="time">uren</p><p id="mins" class="time">:minuten</p><br>
+			<p id="date">datum</p>
 		</div> <br>
 
-		<span>
-			<a href="https://www.youtube.com/" target="_blank"><button>
-				<img src="/resources/img/youtube.png" alt=""><p>Youtube</p>
-			</button></a>
-			<a href="https://pantarijn.magister.net" target="_blank"><button>
-				<img src="/resources/img/magister.png" alt=""><p>Magister</p>
-			</button></a>
-			<a href="https://onedrive.live.com/about/en-us/signin/" target="_blank"><button>
-				<img src="/resources/img/onedrive.png" alt=""><p>Onedrive</p>
-			</button></a>
-			<a href="https://codepanta.nl/login/index.php" target="_blank"><button>
-				<img src="/resources/img/codepanta.png" alt=""><p>Codepanta</p>
-			</button></a>
-			<a href="https://reddit.com" target="_blank"><button>
-				<img src="/resources/img/reddit.png" alt=""><p>Reddit</p>
-			</button></a>
-			<a href="https://open.spotify.com/browse/featured" target="_blank"><button>
-				<img src="/resources/img/spotify.png" alt=""><p>Spotify</p>
-			</button></a>
-			<a href="https://w3schools.com" target="_blank"><button>
-				<img src="/resources/img/w3schools.png" alt=""><p>W3Schools</p>
-			</button></a>
-			<a href="https://maps.google.com" target="_blank"><button>
-				<img src="/resources/img/googlemaps.png" alt=""><p>Maps</p>
-			</button></a>
-			<a href="https://translate.google.com" target="_blank"><button>
-				<img src="/resources/img/googletranslate.png" alt=""><p>Translate</p>
-			</button></a>
+		<span id="shortcuts">
+			<button><a href="https://www.youtube.com/" target="_blank">
+				<img src="/resources/img/youtube.png" alt="">Youtube
+			</a></button>
+			<button><a href="https://pantarijn.magister.net" target="_blank">
+				<img src="/resources/img/magister.png" alt="">Magister
+			</a></button>
+			<button><a href="https://onedrive.live.com/about/en-us/signin/" target="_blank">
+				<img src="/resources/img/onedrive.png" alt="">Onedrive
+			</a></button>
+			<button><a href="https://codepanta.nl/login/index.php" target="_blank">
+				<img src="/resources/img/codepanta.png" alt="">Codepanta
+			</a></button>
+			<button><a href="https://reddit.com" target="_blank">
+				<img src="/resources/img/reddit.png" alt="">Reddit
+			</a></button>
+			<button><a href="https://open.spotify.com/browse/featured" target="_blank">
+				<img src="/resources/img/spotify.png" alt="">Spotify
+			</a></button>
+			<button><a href="https://w3schools.com" target="_blank">
+				<img src="/resources/img/w3schools.png" alt="">W3Schools
+			</a></button>
+			<button><a href="https://maps.google.com" target="_blank">
+				<img src="/resources/img/googlemaps.png" alt="">Maps
+			</a></button>
+			<button><a href="https://translate.google.com" target="_blank">
+				<img src="/resources/img/googletranslate.png" alt="">Translate
+			</a></button>
 		</span>
 
 		<span>
-			<button onclick="openMenu()" title="Voeg je eigen shortcut toe"><img src="/resources/img/cross.png"><p>Voeg toe</p></button>
+			<button onclick="openMenu()" title="Voeg je eigen shortcut toe">
+				<img src="/resources/img/cross.png">Voeg toe
+			</button>
 		</span>
 
-	</aside>
+	</section>
 
+	<!-- Triangle -->
 	<svg>
 		<polygon points="0,5 0,2000 300,5"/>
 	</svg>
@@ -77,7 +80,8 @@
 			<h4>LINKS</h4>
 			<ul>
 				<li><a href="https://samtaen.ml">Sam Taen</a></li>
-				<li><a href="">yeet</a></li>
+				<li><a href="http://jonathanbos.nl">Jonathan Bos</a></li>
+				<li><a href=""></a></li>
 			</ul>
 		</div>
 		<div>
@@ -89,6 +93,14 @@
 				<li><a href="https://www.reddit.com/user/Marho_">Reddit</a></li>
 			</ul>
 	  </div>
+		<div>
+			<h4>TOOLS</h4>
+			<ul>
+			<li><a href="https://w3schools.com">W3schools</a></li>
+			<li><a href="https://quizlet.com">Quizlet</a></li>
+			<li><a href="https://tweakers.net">Tweakers</a></li>
+			</ul>
+		</div>
 
 	</footer>
 
@@ -97,13 +109,14 @@
 	<div id="addShortcutMenu" class="box menu hidden lowerIndex">
 		<h1 id='menuTitle'>Maak je eigen shortcut</h1>
 		<h4>Bedenk een naam voor je shortcut</h4><br>
-		<input type='text' class='input' id='shortcutName'><br>
+		<input type='text' class='input inputMenu' id='shortcutName'><br>
 		<h4>Geef de link van je shortcut</h4><br>
-		<input type='text' class='input' id='shortcutLink'>
+		<input type='text' class='input inputMenu' id='shortcutLink'>
 		<button class='button' onclick="createShortcut()" id='shortcutCreateButton'>Voeg toe</button>
 		<button class="cancelButton" onclick="closeMenu()" id="shortcutCancelButton">Cancel</button>
 	</div>
 
+	<!-- Javascript -->
 	<script src="/resources/js/navbar.json.js"></script>
 	<script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script>
 	<script src="/resources/js/insertNavbar.js"></script>

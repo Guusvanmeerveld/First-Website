@@ -44,15 +44,17 @@ function createShortcut(shortcutObj) {
     }
     var obj = JSON.stringify(data)
     ls.setItem("shortcuts", obj)
-    var shortcut = $("<a>",{href:shortcutLink,target:'_blank'});
-    var shortcutDiv = $('<div>',{class:"shortcutImgBox"});
-    var shortcutImage = $("<img>",{src:'/resources/img/shortcut.png',class:'shortcutImg',alt:""});
-    var shortcutText = c("p")
-    shortcutText.innerHTML = shortcutName // Can't use jquery (I think)
-    shortcutText.className = "shortcutText"
-    $("#shortcuts").append(shortcut);
-    $(shortcut).append(shortcutDiv);
-    $(shortcutDiv).append(shortcutImage, shortcutText);
+    var shortcut = c("a")
+    shortcut.href = shortcutLink
+    shortcut.alt = " "
+    shortcut.target = "_blank"
+    shortcut.innerHTML = shortcutName
+    var shortcutButton = c("button")
+    var shortcutImage = c("img")
+    shortcutImage.src = "/resources/img/shortcut.png"
+    $("#shortcuts").append(shortcutButton);
+    $(shortcutButton).append(shortcut);
+    $(shortcut).prepend(shortcutImage);
     $(".inputMenu").val('')
     closeMenu();
   }

@@ -1,5 +1,5 @@
 /* Main CSS */
-aside {
+section {
   float: left;
   height: 95vh;
   display: inline-block;
@@ -43,9 +43,11 @@ svg {
 .time {
   display: inline-block;
   font-size: 8rem;
+  margin: 0;
 }
 #date {
   font-size: 2rem;
+  margin: 0;
 }
 /* Footer */
 footer {
@@ -83,14 +85,19 @@ footer a:hover {
 /* Support for mobile devices */
 @media screen and (min-width:0px) and (max-width:1000px) {
   aside {
-    width: 96%!important;
+    width: 100%!important;
+  }
+  svg {
+    display: none;
+  }
+  .time {
+    font-size: 5rem!important;
   }
   footer {
-    width: 98%!important;
-    display: block!important;
-    margin: 0!important;
+    float: left;
+    width: 100%;
   }
   footer div {
-    margin-top: 2rem!important;
+    margin: 5rem 0 0 3rem!important;
   }
 }

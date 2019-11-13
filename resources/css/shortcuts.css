@@ -6,7 +6,7 @@
   }
 }
 /* Shortcuts */
-aside span button {
+section span button {
   margin: 0 0 1rem 1rem;
   width: 12rem;
   padding: 1rem;
@@ -18,24 +18,20 @@ aside span button {
   cursor: pointer;
   transition: background-color .5s, border .5s;
 }
-aside span button:hover {
+section span button:hover {
   background-color: #3d3e47;
   border-color: #3d3e47;
 }
-aside span button:hover .removeShortcut {
+section span button:hover .removeShortcut {
   display: inline;
 }
-aside span button:focus {
+section span button:focus {
   outline: none;
 }
-aside span img {
+section span img {
   width: 3rem;
+  margin-right: 1rem;
   height: 3rem;
-}
-aside span p {
-  display: inline-block;
-  margin-left: 1rem;
-  margin-bottom: 0!important;
 }
 
 /* Shortcut creation menu */

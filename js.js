@@ -33,7 +33,7 @@ function showSearch(e) {
   }
   else {
     openSearch();
-    d("googleSearchBar").value = e.key + d("googleSearchBar").value
+    d("googleSearchBar").value = d("googleSearchBar").value + e.key
   }
 }
 

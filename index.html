@@ -10,6 +10,7 @@
 		<title>Home</title>
 		<link rel="stylesheet" href="/resources/css/shortcuts.css">
 		<link rel="stylesheet" href="/css.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/resources/css/cssall.css">
 		<link rel="stylesheet" href="/resources/css/navbar.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -21,82 +22,75 @@
 	<!-- Google search -->
 	<input type="text" placeholder="Voer een zoekopdracht of url in" id="googleSearchBar" class="searchMove" spellcheck="false" autocapitalize="off" autocomplete="off">
 
-	<!-- Welcome -->
 	<aside>
-	<div id="welcome">
-		<h1 id="timeWelcome">,</h1>
-	</div>
+		<!-- Clock -->
+		<div id="timeBox">
+			<h1 id="hours" class="time"></h1><h1 id="mins" class="time"></h1><h1 id="secs" class="time"></h1><br>
+			<h1 id="date"></h1>
+		</div> <br>
 
-	<!-- Clock -->
-	<div id="timeBox">
-		<h1 id="hours" class="time"></h1><h1 id="mins" class="time"></h1><h1 id="secs" class="time"></h1><br>
-		<h1 id="date"></h1>
-	</div>
-</aside>
+		<span>
+			<a href="https://www.youtube.com/" target="_blank"><button>
+				<img src="/resources/img/youtube.png" alt=""><p>Youtube</p>
+			</button></a>
+			<a href="https://pantarijn.magister.net" target="_blank"><button>
+				<img src="/resources/img/magister.png" alt=""><p>Magister</p>
+			</button></a>
+			<a href="https://onedrive.live.com/about/en-us/signin/" target="_blank"><button>
+				<img src="/resources/img/onedrive.png" alt=""><p>Onedrive</p>
+			</button></a>
+			<a href="https://codepanta.nl/login/index.php" target="_blank"><button>
+				<img src="/resources/img/codepanta.png" alt=""><p>Codepanta</p>
+			</button></a>
+			<a href="https://reddit.com" target="_blank"><button>
+				<img src="/resources/img/reddit.png" alt=""><p>Reddit</p>
+			</button></a>
+			<a href="https://open.spotify.com/browse/featured" target="_blank"><button>
+				<img src="/resources/img/spotify.png" alt=""><p>Spotify</p>
+			</button></a>
+			<a href="https://w3schools.com" target="_blank"><button>
+				<img src="/resources/img/w3schools.png" alt=""><p>W3Schools</p>
+			</button></a>
+			<a href="https://maps.google.com" target="_blank"><button>
+				<img src="/resources/img/googlemaps.png" alt=""><p>Maps</p>
+			</button></a>
+			<a href="https://translate.google.com" target="_blank"><button>
+				<img src="/resources/img/googletranslate.png" alt=""><p>Translate</p>
+			</button></a>
+		</span>
 
-	<!-- Shortcuts -->
-		<div id="shortcutBox" class="box">
-			<span id="shortcuts">
-				<a href="https://www.youtube.com/" target="_blank"><div>
-					<img class="shortcutImg" src="/resources/img/youtube.png" alt=""><p class="shortcutText">Youtube</p>
-				</div></a>
-				<a href="https://pantarijn.magister.net" target="_blank"><div>
-					<img class="shortcutImg" src="/resources/img/magister.png" alt=""><p class="shortcutText">Magister</p>
-				</div></a>
-				<a href="https://onedrive.live.com/about/en-us/signin/" target="_blank"><div>
-					<img src="/resources/img/onedrive.png" class="shortcutImg" alt=""><p class="shortcutText">Onedrive</p>
-				</div></a>
-				<a href="https://codepanta.nl/login/index.php" target="_blank"><div>
-					<img src="/resources/img/codepanta.png" class="shortcutImg" alt=""><p class="shortcutText">Codepanta</p>
-				</div></a>
-				<a href="https://reddit.com" target="_blank"><div>
-					<img src="/resources/img/reddit.png" class="shortcutImg" alt=""><p class="shortcutText">Reddit</p>
-				</div></a>
-				<a href="https://open.spotify.com/browse/featured" target="_blank"><div>
-					<img src="/resources/img/spotify.png" class="shortcutImg" alt=""><p class="shortcutText">Spotify</p>
-				</div></a>
-				<a href="https://w3schools.com" target="_blank"><div>
-					<img src="/resources/img/w3schools.png" class="shortcutImg" alt=""><p class="shortcutText">W3Schools</p>
-				</div></a>
-				<a href="https://maps.google.com" target="_blank"><div>
-					<img src="/resources/img/googlemaps.png" class="shortcutImg" alt=""><p class="shortcutText">Maps</p>
-				</div></a>
-				<a href="https://translate.google.com" target="_blank"><div>
-					<img src="/resources/img/googletranslate.png" class="shortcutImg" alt=""><p class="shortcutText">Translate</p>
-				</div></a>
-			</span>
-			<div class="shortcutImgBox" onclick="openMenu()" title="Voeg je eigen shortcut toe"><img src="/resources/img/cross.png" class="shortcutImg"><p class="shortcutText">Voeg toe</p></div>
+		<span>
+			<button onclick="openMenu()" title="Voeg je eigen shortcut toe"><img src="/resources/img/cross.png"><p>Voeg toe</p></button>
+		</span>
+
+	</aside>
+
+	<svg>
+		<polygon points="0,5 0,2000 300,5"/>
+	</svg>
+
+	<!-- Footer -->
+  <footer>
+
+		<!-- Info -->
+		<div>
+			<h4>LINKS</h4>
+			<ul>
+				<li><a href="https://samtaen.ml">Sam Taen</a></li>
+				<li><a href="">yeet</a></li>
+			</ul>
 		</div>
+		<div>
+			<h4>SOCIAL</h4>
+			<ul>
+				<li><a href="https://www.youtube.com/channel/UCYuqpoMay5SezCBrA_HKVWQ?view_as=subscriber">Youtube</a></li>
+				<li><a href="https://www.sololearn.com/Profile/9075320">Sololearn</a></li>
+				<li><a href="https://twitter.com/GuusvanMeerveld">Twitter</a></li>
+				<li><a href="https://www.reddit.com/user/Marho_">Reddit</a></li>
+			</ul>
+	  </div>
 
-		<!-- Footer -->
-  	<footer>
-
-			  <!-- Info -->
-				<div class="box">
-					<h1>Info</h1>
-					<p>Ik ben bezig met het maken van deze website voor een schoolproject. Het doel van deze website is om een handige overzichtelijke pagina te hebben waar je van alles kan vinden.</p>
-				</div>
-
-				<!-- Feedback -->
-				<div class="box">
-					<b>Hier kunt u feedback voor deze pagina invullen</b> <br>
-					<form action="/" method="get">
-					<textarea placeholder="Vul hier uw feedback in." rows="10" class="input" name="feedback"></textarea> <br>
-					<button type="submit" class="button" title="Stuur uw feedback op">Verstuur</button>
-					</form>
-			 </div>
-
-			  <!-- Links -->
-				<div class="box">
-					<h1>Links:</h1>
-						<a href="https://www.instagram.com/gerda.6/"><button class="btn btn-info">Instagram</button></a>
-						<a href="https://www.youtube.com/channel/UCYuqpoMay5SezCBrA_HKVWQ"><button class="btn btn-danger">Youtube</button></a>
-						<a href="https://www.sololearn.com/Profile/9075320"><button class="btn btn-success">Sololearn</button></a>
-						<a href="https://twitter.com/GuusvanMeerveld"><button class="btn btn-primary">Twitter</button></a>
-						<a href="https://www.discord.gg/GJcEYqj"><button class="btn btn-secondary">Discord</button></a>
-	 		 </div>
-
-		</footer>
+	</footer>
 
 	<!-- Add shortcut Menu -->
 	<div id="opacityMenu" onclick="closeMenu()" class="menu lowerIndex"></div>
@@ -110,12 +104,12 @@
 		<button class="cancelButton" onclick="closeMenu()" id="shortcutCancelButton">Cancel</button>
 	</div>
 
-		<script src="/resources/js/navbar.json.js"></script>
-		<script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script>
-		<script src="/resources/js/insertNavbar.js"></script>
-		<script src="/js.js"></script>
-		<script src="/resources/js/shortcuts.js"></script>
-		<script src="/resources/js/javall.js"></script>
+	<script src="/resources/js/navbar.json.js"></script>
+	<script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script>
+	<script src="/resources/js/insertNavbar.js"></script>
+	<script src="/js.js"></script>
+	<script src="/resources/js/shortcuts.js"></script>
+	<script src="/resources/js/javall.js"></script>
 
 </body>
 

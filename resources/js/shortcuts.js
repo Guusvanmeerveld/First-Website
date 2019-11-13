@@ -1,7 +1,7 @@
 // Toggle Menu
 function openMenu() {
   $(".menu").removeClass("lowerIndex");
-  $(".menu").removeClass("hidden");
+  $("#addShortcutMenu").removeClass("hidden");
   d("shortcutLink").setAttribute('placeholder', 'https://example.com')
   d("shortcutName").setAttribute('placeholder', 'Example Website')
 }
@@ -10,7 +10,7 @@ function closeMenu() {
     setTimeout(function () {
       $(".menu").addClass("lowerIndex");
     }, 500)
-    $(".menu").addClass("hidden");
+    $("#addShortcutMenu").addClass("hidden");
   }
 }
 

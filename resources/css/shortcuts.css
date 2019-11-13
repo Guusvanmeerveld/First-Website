@@ -4,35 +4,13 @@
     left: 1rem!important;
     margin-left: 0px!important;
   }
-  #shortcutBox {
-    width: 94%!important;
-    display: block!important;
-    height: 20rem!important;
-    margin: 2rem 0 0 1rem!important;
-  }
 }
 /* Shortcuts */
-#shortcutBox {
-  margin: 3rem 0 0 2rem;
-  width: 59%;
-  float: left;
-  padding: 1rem;
-  display: inline-block;
-  height: 57rem;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-#shortcutBox::-webkit-scrollbar {
-  display: none;
-}
-.shortcutImg {
-  width: 3rem;
-  height: 3rem;
-}
-#shortcutBox div {
+aside span button {
   margin: 0 0 1rem 1rem;
   width: 12rem;
   padding: 1rem;
+  color: white;
   background-color: #363840;
   border: #363840 2px solid;
   border-radius: .5rem;
@@ -40,14 +18,21 @@
   cursor: pointer;
   transition: background-color .5s, border .5s;
 }
-#shortcutBox div:hover {
+aside span button:hover {
   background-color: #3d3e47;
   border-color: #3d3e47;
 }
-#shortcutBox div:hover .removeShortcut {
+aside span button:hover .removeShortcut {
   display: inline;
 }
-.shortcutText {
+aside span button:focus {
+  outline: none;
+}
+aside span img {
+  width: 3rem;
+  height: 3rem;
+}
+aside span p {
   display: inline-block;
   margin-left: 1rem;
   margin-bottom: 0!important;
@@ -69,7 +54,7 @@
   left: 0px;
   top: 0px;
   height: 100vh;
-  opacity: .7;
+  opacity: .5;
   background-color: black;
   display: inline-block;
   z-index: 1;

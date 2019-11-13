@@ -1,9 +1,16 @@
 /* Main CSS */
 aside {
   float: left;
+  height: 95vh;
   display: inline-block;
-  width: 36%;
+  width: 50%;
   background-color: #454752;
+}
+svg {
+  fill: #454752;
+  stroke-width: 1;
+  stroke: #454752;
+  height: 95vh;
 }
 /* Google search */
 #googleSearchBar {
@@ -27,57 +34,53 @@ aside {
   opacity: 0;
   top: 0px!important;
 }
-/* Welcome */
-#welcome {
-  padding: 1rem;
-  margin-left: 1rem;
-}
 /* Clock */
 #timeBox {
-   margin: 2rem 0 0 1rem;
+   margin-left: 1rem;
    padding: 1rem;
+   font-family: 'Open Sans', sans-serif;
 }
 .time {
   display: inline-block;
-  font-size: 5rem;
+  font-size: 8rem;
 }
 #date {
-  font-size: 150%;
+  font-size: 2rem;
 }
 /* Footer */
 footer {
-  margin-top: 1rem;
-  float: left;
+  background-color: black;
 	display: flex!important;
-}
-footer div::-webkit-scrollbar {
-  display: none;
+  height: 35vh;
+  font-family: 'Open Sans', sans-serif;
 }
 footer div {
-  padding: 1rem;
-  margin: 1rem;
-  overflow: scroll;
-  overflow-x: hidden;
+  margin: 5rem 0 0 8rem;
+  display: inline-block;
 }
-/* Info blocks */
-footer div:nth-of-type(2) textarea {
-	width: 98%;
-  margin-top: 8px;
-  height: 6rem;
+footer h4 {
+  color: gray;
 }
-footer div:nth-of-type(2) button {
-	width: 98%;
-  margin-top: 4px;
+footer ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
 }
-footer div:nth-of-type(3) a button {
-  margin-bottom: 5px;
+footer a {
+  transition: color .5s;
+}
+footer li {
+  margin-top: 1rem;
+}
+footer a:hover {
+  color: gray!important;
 }
 /* Mobile support */
 @viewport {
   width: device-width;
   zoom: 1.0;
 }
-/* Support for normal mobile devices */
+/* Support for mobile devices */
 @media screen and (min-width:0px) and (max-width:1000px) {
   aside {
     width: 96%!important;

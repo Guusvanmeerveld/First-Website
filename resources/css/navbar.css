@@ -33,17 +33,16 @@
   background-color: #101012;
   margin: 0;
   padding: 0;
-  transition: opacity .5s;
   list-style: none;
 }
 .dropdownButton {
   width: 100%;
 }
 .navList:hover .dropdownList {
-  opacity: 1!important;
+  display: block!important;
 }
 .navigation button:hover {
-  color: #9c9c9c!important;
+  color: #4c8a80!important;
 }
 
 /* Switch */

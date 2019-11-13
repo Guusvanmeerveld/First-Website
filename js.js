@@ -49,27 +49,6 @@ function openSearch(e) {
   d("googleSearchBar").focus()
 }
 
-// Welcome
-function setWelcome() {
-  var html = d("timeWelcome").innerHTML
-  var date = new Date()
-  if (date.getHours() < 6) {
-    var welcome = "Goedenacht"
-  }
-  else if (date.getHours() > 18) {
-    var welcome = "Goedeavond"
-  }
-  else if (date.getHours() > 12) {
-    var welcome = "Goedemiddag"
-  }
-  else if (date.getHours() > 6) {
-     var welcome = "Goedemorgen"
-  }
-  html = welcome + html
-}
-
-setWelcome();
-
 // Clock
 function showTime() {
   var date = new Date()

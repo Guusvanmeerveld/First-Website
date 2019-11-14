@@ -44,17 +44,13 @@ function createShortcut(shortcutObj) {
     }
     var obj = JSON.stringify(data)
     ls.setItem("shortcuts", obj)
-    var shortcut = c("a")
-    shortcut.href = shortcutLink
-    shortcut.alt = " "
-    shortcut.target = "_blank"
-    shortcut.innerHTML = shortcutName
     var shortcutButton = c("button")
+    shortcutButton.onclick = function() { window.open(shortcutLink); }
+    shortcutButton.innerHTML = shortcutName
     var shortcutImage = c("img")
     shortcutImage.src = "/resources/img/shortcut.png"
     $("#shortcuts").append(shortcutButton);
-    $(shortcutButton).append(shortcut);
-    $(shortcut).prepend(shortcutImage);
+    $(shortcutButton).prepend(shortcutImage);
     $(".inputMenu").val('')
     closeMenu();
   }

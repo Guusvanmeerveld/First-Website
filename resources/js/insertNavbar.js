@@ -10,6 +10,48 @@ navbarList.className = "navbarList"
 navigation.appendChild(navbarList)
 document.body.appendChild(navigation)
 
+// Search
+d("googleSearchBar").addEventListener("keyup",searchGoogleEnter)
+function searchGoogleEnter(key) {
+  if(key.key == "Enter") {
+    var search = d("googleSearchBar").value;
+    var containsDot = search.indexOf(".");
+    if (search !== "") {
+      if (containsDot > -1) {
+        open("http://" + search);
+      }
+      else {
+        open("https://www.google.com/search?q=" + search);
+      }
+    }
+  }
+  if (key.key == "Escape") {
+    closeSearch()
+  }
+}
+
+function showSearch() {
+  var open = !d("googleSearchBar").classList.contains("searchMove")
+  if (open) {
+    closeSearch();
+  }
+  else {
+    openSearch();
+  }
+}
+
+function closeSearch() {
+  $("#opacityMenu").addClass("lowerIndex")
+  d("googleSearchBar").blur()
+  d("googleSearchBar").classList.add("searchMove")
+}
+
+function openSearch(e) {
+  $("#opacityMenu").removeClass("lowerIndex")
+  d("googleSearchBar").classList.remove("searchMove")
+  d("googleSearchBar").focus()
+}
+
 // Create Navbar
 Navbar.forEach(i=>{
   var navList = c("li")
@@ -25,6 +67,9 @@ Navbar.forEach(i=>{
   }
   if (i.desc) {
     navButton.title = i.desc
+  }
+  if (i.func) {
+    navButton.setAttribute('onclick',i.func)
   }
   navList.appendChild(navButton)
   var dropdownList = c("ul")

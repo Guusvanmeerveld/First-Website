@@ -37,6 +37,10 @@ body {
 a {
   text-decoration: none!important;
   color: white!important;
+  transition: color .4s;
+}
+a:hover {
+  color: gray!important;
 }
 /* Standard block styling */
 .box {

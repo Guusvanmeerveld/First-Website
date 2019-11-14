@@ -68,14 +68,8 @@ footer ul {
   margin-top: 20px;
   padding: 0;
 }
-footer a {
-  transition: color .5s;
-}
 footer li {
   margin-top: 1rem;
-}
-footer a:hover {
-  color: gray!important;
 }
 /* Mobile support */
 @viewport {

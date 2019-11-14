@@ -9,14 +9,17 @@
 section span button {
   margin: 0 0 1rem 1rem;
   width: 12rem;
+  max-height: 5.3rem;
   padding: 1rem;
   color: white;
   background-color: #363840;
   border: #363840 2px solid;
   border-radius: .5rem;
   display: inline-block;
-  cursor: pointer;
   transition: background-color .5s, border .5s;
+}
+section span button::-webkit-scrollbar {
+  display: hidden;
 }
 section span button:hover {
   background-color: #3d3e47;

@@ -2,53 +2,6 @@ var d = document.getElementById.bind(document);
 var c = document.createElement.bind(document);
 var q = document.querySelector.bind(document);
 
-// Google Search
-d("googleSearchBar").addEventListener("keyup",searchGoogleEnter)
-function searchGoogleEnter(key) {
-  if(key.key == "Enter") {
-    var search = d("googleSearchBar").value;
-    var containsDot = search.indexOf(".");
-    if (search !== "") {
-      if (containsDot > -1) {
-        open("http://" + search);
-      }
-      else {
-        open("https://www.google.com/search?q=" + search);
-      }
-    }
-  }
-  if (key.key == "Escape") {
-    closeSearch()
-  }
-}
-
-addEventListener("keyup",showSearch)
-function showSearch(e) {
-  if (e.target !== document.body || !d("addShortcutMenu").classList.contains("hidden")) {
-    return
-  }
-  var open = !d("googleSearchBar").classList.contains("searchMove")
-  if (open && !d("googleSearchBar").value || e.key == "Escape" ) {
-    closeSearch();
-  }
-  else {
-    openSearch();
-    d("googleSearchBar").value = d("googleSearchBar").value + e.key
-  }
-}
-
-function closeSearch() {
-  $("#opacityMenu").addClass("lowerIndex")
-  d("googleSearchBar").blur()
-  d("googleSearchBar").classList.add("searchMove")
-}
-
-function openSearch(e) {
-  $("#opacityMenu").removeClass("lowerIndex")
-  d("googleSearchBar").classList.remove("searchMove")
-  d("googleSearchBar").focus()
-}
-
 // Clock
 function showTime() {
   var date = new Date()

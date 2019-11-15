@@ -4,6 +4,11 @@
     left: 1rem!important;
     margin-left: 0px!important;
   }
+  section span button {
+    width: 5rem!important;
+    height: 8rem!important;
+    color: transparent!important;
+  }
 }
 /* Shortcuts */
 section span button {
@@ -43,20 +48,6 @@ section span img {
 }
 .menu {
   transition: opacity .5s;
-}
-.lowerIndex {
-  z-index: -1!important;
-}
-#opacityMenu {
-  width: 100vw;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  height: 100vh;
-  opacity: .5;
-  background-color: black;
-  display: inline-block;
-  z-index: 1;
 }
 #addShortcutMenu {
   display: inline-block;

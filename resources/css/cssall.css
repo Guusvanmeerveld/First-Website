@@ -16,6 +16,28 @@ body {
   min-height: 100%;
   background-color: #19191C;
 }
+/* Search */
+.searchBar {
+	background-color: #ededed;
+	border: #ededed 2px solid;
+  position: sticky;
+  z-index: 2;
+  top: 6rem;
+  left: calc(50% - 48%);
+	padding: 1rem;
+	width: 96%;
+	height: 3rem;
+  border-radius: 2rem;
+  outline: none;
+  transition: border .4s, opacity .3s, top .3s;
+}
+.searchBar:hover, .searchBar:focus {
+  border: #4c8a80 2px solid;
+}
+.searchMove {
+  opacity: 0;
+  top: 0px!important;
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
     background-color: #1d1e1e;

@@ -1,38 +1,21 @@
 /* Main CSS */
 section {
   float: left;
-  height: 95vh;
   display: inline-block;
   width: 50%;
   background-color: #454752;
+  height: 95vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+section::-webkit-scrollbar {
+  display: none;
 }
 svg {
   fill: #454752;
   stroke-width: 1;
   stroke: #454752;
   height: 95vh;
-}
-/* Google search */
-#googleSearchBar {
-	background-color: #ededed;
-	border: #ededed 2px solid;
-  position: sticky;
-  z-index: 2;
-  top: 6rem;
-  left: calc(50% - 48%);
-	padding: 1rem;
-	width: 96%;
-	height: 3rem;
-  border-radius: 2rem;
-  outline: none;
-  transition: border .4s, opacity .3s, top .3s;
-}
-#googleSearchBar:hover, #googleSearchBar:focus {
-  border: #4c8a80 2px solid;
-}
-.searchMove {
-  opacity: 0;
-  top: 0px!important;
 }
 /* Clock */
 #timeBox {
@@ -53,11 +36,10 @@ svg {
 footer {
   background-color: black;
 	display: flex!important;
-  height: 35vh;
   font-family: 'Open Sans', sans-serif;
 }
 footer div {
-  margin: 5rem 0 0 8rem;
+  margin: 5rem 0 3rem 8rem;
   display: inline-block;
 }
 footer h4 {
@@ -78,8 +60,9 @@ footer li {
 }
 /* Support for mobile devices */
 @media screen and (min-width:0px) and (max-width:1000px) {
-  aside {
+  section {
     width: 100%!important;
+    height: 80vh!important ;
   }
   svg {
     display: none;
@@ -89,9 +72,10 @@ footer li {
   }
   footer {
     float: left;
+    display: block!important;
     width: 100%;
   }
   footer div {
-    margin: 5rem 0 0 3rem!important;
+    margin: 3rem 0 1rem 5rem!important;
   }
 }

@@ -1,15 +1,15 @@
 Navbar = [
   {
-    name: "Search",
-    desc: "Zoek iets op",
-    icon: "fas fa-search",
-    func: "showSearch()"
-  },
-  {
     name: "Home",
     desc: "Ga naar de homepagina",
     link: "/",
     icon: "fas fa-home"
+  },
+  {
+    name: "Search",
+    desc: "Zoek iets op",
+    icon: "fas fa-search",
+    func: "showSearch()"
   },
   {
     name: "Contact",

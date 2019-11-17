@@ -1,4 +1,5 @@
 var d = document.getElementById.bind(document);
+var g = document.querySelector.bind(document);
 var autoRunCheck = localStorage.getItem("autoRun")
 var setCodeHTML = localStorage.getItem("writtenCodeHTML")
 var setCodeCSS = localStorage.getItem("writtenCodeCSS")
@@ -30,16 +31,18 @@ function autoRun() {
 }
 
 function showCode(lang) {
-  d("cssInput").style = "display: none"
-  d("jsInput").style = "display: none"
-  d("htmlInput").style = "display: none"
+  $(".langButton").css("background-color", "#3b3c45")
+  $(".langInput").css("display", "none")
   if (lang == "html") {
+    d("htmlButton").style = "background-color: #27282e;"
     d("htmlInput").style = "display: block"
   }
   else if (lang == "css") {
+    d("cssButton").style = "background-color: #27282e;"
     d("cssInput").style = "display: block"
   }
   else {
+    d("jsButton").style = "background-color: #27282e;"
     d("jsInput").style = "display: block"
   }
 }
@@ -48,15 +51,13 @@ function updateCode(source) {
   var autoRunCheck = localStorage.getItem("autoRun")
   var code = "<style>" + d("cssInput").value + "</style>" + "<script>" + d("jsInput").value + "</script>" + d("htmlInput").value
   if (source == "run" || autoRunCheck == "on") {
+    localStorage.setItem("writtenCodeHTML", d("htmlInput").value)
+    localStorage.setItem("writtenCodeCSS", d("cssInput").value)
+    localStorage.setItem("writtenCodeJS", d("jsInput").value)
     d("htmlOutput").setAttribute('srcdoc', code)
   }
-  localStorage.setItem("writtenCodeHTML", d("htmlInput").value)
-  localStorage.setItem("writtenCodeCSS", d("cssInput").value)
-  localStorage.setItem("writtenCodeJS", d("jsInput").value)
 }
 
 emmet.require('textarea').setup({
-pretty_break: true, // enable formatted line breaks (when inserting
-                // between opening and closing tag)
 use_tab: true       // expand abbreviations by Tab key
 });

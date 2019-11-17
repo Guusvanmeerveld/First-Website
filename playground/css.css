@@ -1,14 +1,14 @@
 #content {
   position: absolute;
   width: 100%;
-  height: 94vh;
+  height: 95vh;
   top: 55px;
 }
 #content div {
   float: left;
 }
 #codeContent {
-  height: 100%;
+  height: 95vh;
   width: 50%;
   background-color: #222226;
 }
@@ -46,4 +46,13 @@
   background-color: white;
   height: 100%;
   width: 50%;
+}
+@media screen and (min-width:0px) and (max-width:1079px) {
+  #codeContent {
+    display: block!important;
+    width: 100%;
+  }
+  iframe {
+    width: 100%!important;
+  }
 }

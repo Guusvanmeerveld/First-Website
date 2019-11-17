@@ -58,3 +58,20 @@
   display: inline-block;
   z-index: 1;
 }
+.fa-bars {
+  display: none!important;
+}
+@media screen and (min-width:0px) and (max-width:1000px) {
+  .fa-bars {
+    margin: 10px 0 0 10px!important;
+    display: block!important;
+  }
+  .navigation li{
+    display: none;
+    background-color: #101012;
+  }
+  .navigation .fa-bars:hover + ul li, .navigation ul:hover li {
+    display: block!important;
+    width: 100%;
+  }
+}

@@ -10,10 +10,15 @@ navbarList.className = "navbarList"
 navigation.appendChild(navbarList)
 document.body.appendChild(navigation)
 
-// opacity
+// Opacity
 var opacity = c("div")
 opacity.className = "opacityMenu lowerIndex menu"
 document.body.appendChild(opacity)
+
+// Hamburger Menu
+var hamburger = c("i")
+hamburger.className = "fas fa-bars fa-2x"
+navigation.prepend(hamburger)
 
 // Search
 var search = c("input")

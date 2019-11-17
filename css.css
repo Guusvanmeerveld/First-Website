@@ -3,7 +3,7 @@ section {
   float: left;
   display: inline-block;
   width: 50%;
-  background-color: #454752;
+  margin-top: 3.2rem;
   height: 95vh;
   overflow: scroll;
   overflow-x: hidden;
@@ -12,6 +12,7 @@ section::-webkit-scrollbar {
   display: none;
 }
 svg {
+  margin-top: 3.2rem;
   fill: #454752;
   stroke-width: 1;
   stroke: #454752;
@@ -68,7 +69,7 @@ footer li {
     display: none;
   }
   .time {
-    font-size: 5rem!important;
+    font-size: 6rem!important;
   }
   footer {
     float: left;
@@ -76,6 +77,6 @@ footer li {
     width: 100%;
   }
   footer div {
-    margin: 3rem 0 1rem 5rem!important;
+    margin: 3rem 0 1rem 2rem!important;
   }
 }

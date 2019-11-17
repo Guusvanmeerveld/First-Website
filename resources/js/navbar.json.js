@@ -12,10 +12,10 @@ Navbar = [
     func: "showSearch()"
   },
   {
-    name: "Contact",
-    desc: "Neem contact met mij op",
-    link: "/contact",
-    icon: "fas fa-phone"
+    name: "Playground",
+    desc: "Test je html live!",
+    link: "/playground",
+    icon: "fas fa-code"
   },
   {
     name: "Experimenteel",

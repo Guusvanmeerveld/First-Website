@@ -35,5 +35,17 @@ Navbar = [
         icon: "fas fa-pencil-alt"
       }
     ]
+  },
+  {
+    name: "Games",
+    desc: "Hier kan je spelletjes spelen",
+    icon: "fas fa-gamepad",
+    dropdown: [
+      {
+        name: "Vuurjongen en Watermeisje 4",
+        icon: "fas fa-fire",
+        link: "/vuurjongen-en-watermeisje-4"
+      }
+    ]
   }
 ]

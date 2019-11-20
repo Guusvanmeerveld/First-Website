@@ -18,6 +18,12 @@ Navbar = [
     icon: "fas fa-code"
   },
   {
+    name: "Contact",
+    desc: "Neem contact met mij op",
+    link: "/contact",
+    icon: "fas fa-phone"
+  },
+  {
     name: "Games",
     desc: "Hier kan je spelletjes spelen",
     icon: "fas fa-gamepad",

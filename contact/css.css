@@ -1,0 +1,39 @@
+#main {
+  background-color: #17171b;
+  width: 100%;
+  position: absolute;
+  height: 70vh;
+}
+#main h1 {
+  margin: 8rem 0 0 15rem;
+  font-size: 6rem;
+}
+#main i {
+  position: absolute;
+  top: 8rem;
+  font-size: 20rem;
+  right: 20rem;
+}
+#info {
+  background-color: #121215;
+  height: 30vh;
+  position: absolute;
+  width: 100%;
+  top: 70vh;
+}
+#info h2 {
+  top: 4rem;
+  left: 10rem;
+  position: absolute;
+  margin: 0;
+}
+#info ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10rem 0 0 10rem;
+  padding: 0;
+  font-family: 'Open Sans'
+}
+#info h4 {
+  color: gray;
+}

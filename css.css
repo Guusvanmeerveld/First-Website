@@ -56,10 +56,12 @@ footer li {
   margin-top: 1rem;
 }
 footer p {
-  position: absolute;
   font-size: 13px;
-  bottom: -19rem;
-  left: 1rem;
+  position: absolute;
+  margin: 0;
+  bottom: -20rem;
+  right: 1rem;
+  white-space: nowrap;
 }
 /* Mobile support */
 @viewport {
@@ -86,6 +88,6 @@ footer p {
     margin: 3rem 0 1rem 4rem!important;
   }
   footer p {
-    bottom: -10rem!important;
+    bottom: -12rem!important;
   }
 }

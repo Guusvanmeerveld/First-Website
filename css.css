@@ -24,7 +24,7 @@ svg {
    padding: 1rem;
    font-family: 'Open Sans', sans-serif;
 }
-.time {
+section div p {
   display: inline-block;
   font-size: 8rem;
   margin: 0;

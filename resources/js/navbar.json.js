@@ -18,25 +18,6 @@ Navbar = [
     icon: "fas fa-code"
   },
   {
-    name: "Experimenteel",
-    desc: "Allemaal experimentele dingen",
-    icon: "fas fa-vial",
-    dropdown: [
-      {
-        name: "Color",
-        desc: "Mooie regenboog kleurtjes",
-        link: "/color",
-        icon: "fas fa-tint"
-      },
-      {
-        name: "Canvas",
-        desc: "Mijn eerste canvas",
-        link: "/canvas",
-        icon: "fas fa-pencil-alt"
-      }
-    ]
-  },
-  {
     name: "Games",
     desc: "Hier kan je spelletjes spelen",
     icon: "fas fa-gamepad",

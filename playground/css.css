@@ -18,8 +18,7 @@
   width: 100%;
 }
 #codeContent div {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: calc(50% - 45%);
   width: 90%;
   height: 85%;
 }
@@ -51,6 +50,10 @@
   #codeContent {
     display: block!important;
     width: 100%;
+  }
+  #codeContent button {
+    width: 4rem!important;
+    font-size: 11px;
   }
   iframe {
     width: 100%!important;

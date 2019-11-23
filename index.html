@@ -22,11 +22,11 @@
 	<section class="box">
 		<!-- Clock -->
 		<div id="timeBox">
-			<p id="hours">uren</p><p id="mins">:minuten</p><p id="secs">:seconden</p><br>
+			<p id="hours" class="time">uren</p><p id="mins" class="time">:minuten</p><p id="secs" class="time">:seconden</p><br>
 			<p id="date">datum</p>
 		</div> <br>
 
-		<span id="shortcuts">
+		<span class="shortcuts" id="shortcuts">
 			<button onclick="window.open('https://www.youtube.com/')">
 				<img src="/resources/img/youtube.png" alt="">Youtube
 			</button>
@@ -56,7 +56,7 @@
 			</button>
 		</span>
 
-		<span>
+		<span class="shortcuts">
 			<button onclick="openMenu()" title="Voeg je eigen shortcut toe">
 				<img src="/resources/img/cross.png" alt="">Voeg toe
 			</button>
@@ -68,6 +68,23 @@
 	<svg>
 		<polygon points="0,5 0,2000 300,5"/>
 	</svg>
+
+	<!-- Feedback -->
+	<div id="feedbackContent">
+		<div id="feedbackOne" class="feedback">
+			<div class="user">
+				<img src="/resources/img/user.png" alt="" class="userImg">
+				<h3>Peer Droog</h3>
+		  </div>
+			<h2 class="userFeedback">"Een goede en overzichtelijk website met een handige klok, wel mist er de mogelijkheid om je eigen plaatjes toe te voegen aan de shortcuts."</h2>
+		</div><div class="feedback">
+			<div class="user">
+				<img src="/resources/img/user.png" alt="" class="userImg">
+				<h3>Sam Taen</h3>
+			</div>
+			<h2 class="userFeedback">adkjfkldjafkldfjdklfjdklafjdklaadkjfkldjafkldfjdklfjdklafjdklaadkjfkldjafkldfjdklfjdklafjdklaadkjfkldjafkldfjdklfjdklafjdklaadkjfkldjafkldfjdklfjdklafjdkla</h2>
+		</div>
+	</div>
 
 	<!-- Footer -->
   <footer>
@@ -97,7 +114,8 @@
 			<li><a href="https://cloudflare.com">Cloudflare</a></li>
 			</ul>
 		</div>
-		<p>&#169; 2019 Guus van Meerveld</p>
+
+		<p id="copyright">&#169; 2019 Guus van Meerveld</p>
 
 	</footer>
 

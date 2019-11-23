@@ -7,6 +7,12 @@ function showTime() {
   var date = new Date()
   var days = ["Zondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrijdag","Zaterdag"]
   var months = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
+  if (date.getHours() < 10) {
+    d("hours").innerHTML = "0" + date.getHours() + ":"
+  }
+  else {
+    d("hours").innerHTML = date.getHours() + ":"
+  }
   if (date.getMinutes() < 10) {
     d("mins").innerHTML = "0" + date.getMinutes() + ":"
   }
@@ -19,7 +25,6 @@ function showTime() {
   else {
     d("secs").innerHTML = date.getSeconds()
   }
-  d("hours").innerHTML = date.getHours() + ":"
   d("date").innerHTML = days[date.getDay()] + " " + date.getDate() + " " + months[date.getMonth()];
   setTimeout(showTime, 1000);
 }

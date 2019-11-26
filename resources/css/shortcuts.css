@@ -41,7 +41,7 @@
 #addShortcutMenu {
   display: inline-block;
   z-index: 2;
-  border-radius: 1rem;
+  border-radius: .75rem;
   position: absolute;
   left: calc(50% - 25rem);
   height: 27rem;

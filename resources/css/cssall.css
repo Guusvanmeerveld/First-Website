@@ -22,7 +22,8 @@ body {
 .searchBar {
   background-color: #1b1b1f;
   border: #1b1b1f 2px solid;
-  position: relative;
+  position: absolute;
+  color: white;
   font-family: 'Open Sans', sans-serif;
   z-index: 2;
   right: 2rem;

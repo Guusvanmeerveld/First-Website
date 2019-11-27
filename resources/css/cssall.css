@@ -20,8 +20,8 @@ body {
 }
 /* Search */
 .searchBar {
-  background-color: #1b1b1f;
-  border: #1b1b1f 2px solid;
+  background-color: #2d2d33;
+  border: #2d2d33 2px solid;
   position: absolute;
   color: white;
   font-family: 'Open Sans', sans-serif;

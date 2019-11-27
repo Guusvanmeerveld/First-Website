@@ -20,26 +20,21 @@ body {
 }
 /* Search */
 .searchBar {
-	background-color: #ededed;
-	border: #ededed 2px solid;
-  position: fixed;
+  background-color: #1b1b1f;
+  border: #1b1b1f 2px solid;
+  position: relative;
   font-family: 'Open Sans', sans-serif;
   z-index: 2;
-  top: 6rem;
-  left: calc(50% - 48%);
-	padding: 1rem;
-	width: 96%;
-	height: 3rem;
-  border-radius: 2rem;
+  right: 2rem;
+  padding: 1rem;
+  width: 12rem;
+  height: 3rem;
+  border-radius: .5rem;
   outline: none;
-  transition: border .4s, opacity .3s, top .3s;
+  transition: border .4s;
 }
 .searchBar:hover, .searchBar:focus {
   border: #4c8a80 2px solid;
-}
-.searchMove {
-  opacity: 0;
-  top: 0px!important;
 }
 /* Scrollbar */
 ::-webkit-scrollbar {

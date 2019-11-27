@@ -6,12 +6,6 @@ Navbar = [
     icon: "fas fa-home"
   },
   {
-    name: "Search",
-    desc: "Zoek iets op",
-    icon: "fas fa-search",
-    func: "showSearch()"
-  },
-  {
     name: "Playground",
     desc: "Test je html live!",
     link: "/playground",

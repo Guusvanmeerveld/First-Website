@@ -22,10 +22,10 @@ navigation.prepend(hamburger)
 
 // Search
 var search = c("input")
-search.className = "searchMove searchBar"
+search.className = "searchBar"
 search.placeholder = "Vul een zoek opdracht of url in"
 search.type = "text"
-document.body.prepend(search)
+navigation.appendChild(search)
 
 g(".searchBar").addEventListener("keyup",searchEnter)
 function searchEnter(key) {
@@ -46,28 +46,6 @@ function searchEnter(key) {
   }
 }
 
-function showSearch() {
-  var open = !g(".searchBar").classList.contains("searchMove")
-  if (open) {
-    closeSearch();
-  }
-  else {
-    openSearch();
-  }
-}
-
-function closeSearch() {
-  $(".opacityMenu").addClass("lowerIndex")
-  g(".searchBar").blur()
-  g(".searchBar").classList.add("searchMove")
-}
-
-function openSearch(e) {
-  $(".opacityMenu").removeClass("lowerIndex")
-  g(".searchBar").classList.remove("searchMove")
-  g(".searchBar").focus()
-}
-
 // Create Navbar
 Navbar.forEach(i=>{
   var navList = c("li")
@@ -83,9 +61,6 @@ Navbar.forEach(i=>{
   }
   if (i.desc) {
     navButton.title = i.desc
-  }
-  if (i.func) {
-    navButton.setAttribute('onclick',i.func)
   }
   navList.appendChild(navButton)
   var dropdownList = c("ul")

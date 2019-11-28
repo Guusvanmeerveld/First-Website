@@ -3,46 +3,54 @@
   top: 0px;
   height: 55px;
   width: 100%;
-  background-color: #101012;
+  background-color: #212126;
   z-index: 3;
 }
-.navigation button {
-  padding: .5rem;
-  height: 100%;
-  transition: color .5s;
-  border: 0;
-  background-color: transparent;
-  color: white;
-  display: inline;
+.navigation .fas {
+  margin-left: .5rem;
+  transition: .5s transform;
 }
-.navigation button:focus {
-  outline: 0;
+.navigation a {
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .navbarList {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 14px;
+  height: 100%;
 }
 .navList {
   float: left;
+  margin-left: 25px;
 }
-.navigation i {
-  margin: 10px 15px 10px 10px;
+.navImg {
+  height: 2rem;
+  width: 2rem;
+  margin-top: -4px;
 }
 .dropdownList {
-  background-color: #101012;
-  margin: 0;
-  padding: 0;
+  background-color: #303037;
+  border-radius: 4px;
+  margin-top: 5px;
+  border: #1d1d1d 1px solid;
+  font-family: 'Open Sans';
+  padding: 10px 20px 10px 20px;
   list-style: none;
 }
-.dropdownButton {
+.dropdownLi  {
+  padding: 5px 2px 2px 2px;
+}
+.dropdownLink {
   width: 100%;
 }
 .navList:hover .dropdownList {
   display: block!important;
 }
-.navigation button:hover {
-  color: gray!important;
+.navList:hover .fas {
+  transform: rotate(-180deg);
 }
 .lowerIndex {
   z-index: -1!important;

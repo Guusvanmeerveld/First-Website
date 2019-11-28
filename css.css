@@ -76,12 +76,13 @@ footer {
   background-color: black;
   width: 100%;
   position: relative;
-	display: flex!important;
+  float: left;
   font-family: 'Open Sans', sans-serif;
 }
 footer div {
   margin: 5rem 0 3rem 8rem;
   display: inline-block;
+  vertical-align: top;
 }
 footer h4 {
   color: gray;

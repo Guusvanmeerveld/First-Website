@@ -74,6 +74,22 @@
     margin: 10px 0 0 10px!important;
     display: block!important;
   }
+  .navbarList {
+    height: 100%;
+    margin: 0!important;
+    padding-top: 13px!important;
+  }
+  .dropdownList {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .navList{
+    padding: 10px 0 10px 1rem!important;
+    margin: 0!important;
+    border-top: #454752 2px solid;
+  }
   .navigation li{
     display: none;
     background-color: #101012;

@@ -15,6 +15,11 @@ Navbar = [
     link: "/contact"
   },
   {
+    name: "Feedback",
+    desc: "Feedback voor deze website",
+    link: "/feedback"
+  },
+  {
     name: "Games",
     desc: "Hier kan je spelletjes spelen",
     dropdown: [

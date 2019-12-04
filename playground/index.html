@@ -1,1 +1,75 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Playground</title> <link rel="stylesheet" href="/resources/css/cssall.css"> <link rel="stylesheet" href="/resources/css/navbar.css"> <link rel="stylesheet" href="/playground/css.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></head><body> <div id="content"> <div id="codeContent"> <div> <button onclick="showCode('html')" class="langButton" id="htmlButton">HTML</button> <button onclick="showCode('css')" class="langButton" id="cssButton">CSS</button> <button onclick="showCode()" class="langButton" id="jsButton">JS</button> <button class="options" id="autoRun" onclick="autoRun()">AUTORUN</button> <button onclick="updateCode('run')" class="options">RUN</button> <textarea class="input langInput" id="htmlInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea> <textarea class="input langInput" id="cssInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea> <textarea class="input langInput" id="jsInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea> </div></div><iframe id="htmlOutput"></iframe> </div><script src="/playground/emmet.min.js"></script> <script src="/resources/js/navbar.json.js"></script> <script src="/resources/js/insertNavbar.js"></script> <script src="/resources/js/javall.js"></script> <script src="/playground/js.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playground</title>
+    <link rel="stylesheet" href="/resources/css/cssall.css">
+    <link rel="stylesheet" href="/resources/css/navbar.css">
+    <link rel="stylesheet" href="/playground/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="codeContent">
+            <div>
+                <button onclick="showCode('html')" class="langButton" id="htmlButton">HTML</button>
+                <button onclick="showCode('css')" class="langButton" id="cssButton">CSS</button>
+                <button onclick="showCode()" class="langButton" id="jsButton">JS</button>
+                <button class="options" id="autoRun" onclick="autoRun()">AUTORUN</button>
+                <button onclick="updateCode('run')" class="options">RUN</button>
+                <textarea class="input langInput" id="htmlInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="cssInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="jsInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <iframe id="htmlOutput"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+  		<!-- Info -->
+  		<div>
+  			<h4>LINKS</h4>
+  			<ul>
+  				<li><a href="https://samtaen.ml">Sam Taen</a></li>
+  				<li><a href="http://jonathanbos.nl">Jonathan Bos</a></li>
+  			</ul>
+  		</div>
+  		<div>
+  			<h4>SOCIAL</h4>
+  			<ul>
+  				<li><a href="https://www.youtube.com/channel/UCYuqpoMay5SezCBrA_HKVWQ?view_as=subscriber">Youtube</a></li>
+  				<li><a href="https://twitter.com/GuusvanMeerveld">Twitter</a></li>
+  				<li><a href="https://www.reddit.com/user/Marho_">Reddit</a></li>
+  				<li><a href="https://instagram.com/gerda.6">Instagram</a></li>
+  			</ul>
+  	  </div>
+  		<div>
+  			<h4>TOOLS</h4>
+  			<ul>
+  			<li><a href="https://w3schools.com">W3schools</a></li>
+  			<li><a href="https://stackoverflow.com/">Stack overflow</a></li>
+  			<li><a href="https://cloudflare.com">Cloudflare</a></li>
+  			<li><a href="https://github.com">Github</a></li>
+  			</ul>
+  		</div>
+
+  		<p id="copyright">&#169; 2019 Guus van Meerveld</p>
+
+  	</footer>
+
+    <script src="/playground/emmet.min.js"></script>
+    <script src="/resources/js/navbar.json.js"></script>
+    <script src="/resources/js/insertNavbar.js"></script>
+    <script src="/resources/js/javall.js"></script>
+    <script src="/playground/js.js"></script>
+</body>
+
+</html>

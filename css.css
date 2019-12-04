@@ -33,96 +33,10 @@ svg {
   font-size: 2rem;
   margin: 0;
 }
-/* Feedback */
-#feedbackContent {
-  background-color: #33353d;
-  float: left;
-  width: 100%;
-}
-.feedback {
-  display: inline-block;
-  padding: 14vh 0 14vh 5%;
-  width: 50%;
-  vertical-align: top;
-}
-#feedbackOne {
-  border-right: #454752 4px solid;
-}
-.user {
-  display: inline-block;
-  min-width: 8rem;
-}
-.user h3 {
-  text-align: center;
-}
-.userImg {
-  width: 8rem;
-  height: 8rem;
-  margin-left: calc(50% - 4rem);
-  margin-bottom: 2rem;
-}
-.userFeedback {
-  font-family: 'Open Sans';
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 2rem;
-  padding-left: 1rem;
-  border-left: #ededed 2px solid;
-  width: 30rem;
-  word-wrap: break-word;
-}
-/* Footer */
-footer {
-  background-color: black;
-  width: 100%;
-  position: relative;
-  float: left;
-  font-family: 'Open Sans', sans-serif;
-}
-footer div {
-  margin: 5rem 0 3rem 8rem;
-  display: inline-block;
-  vertical-align: top;
-}
-footer h4 {
-  color: gray;
-}
-footer ul {
-  list-style-type: none;
-  margin-top: 20px;
-  padding: 0;
-}
-footer li {
-  margin-top: 1rem;
-}
-#copyright {
-  font-size: 15px;
-  position: absolute;
-  display: inline-block;
-  margin: auto;
-  bottom: 1rem;
-  right: 1rem;
-  white-space: nowrap;
-  vertical-align: baseline;
-}
 /* Mobile support */
 @viewport {
   width: device-width;
   zoom: 1.0;
-}
-@media screen and (min-width:0px) and (max-width:1525px) {
-  .feedback {
-    display: block!important;
-    width: 100%!important;
-    padding: 5vh 0 5vh;
-    border-right: 0!important;
-  }
-  .user {
-    margin-left: calc(50% - 20rem);
-  }
-  #feedbackOne {
-    border-bottom: #454752 4px solid;
-  }
 }
 /* Support for mobile devices */
 @media screen and (min-width:0px) and (max-width:1000px) {
@@ -134,16 +48,5 @@ footer li {
   }
   .time {
     font-size: 4rem!important;
-  }
-  footer {
-    float: left;
-    width: 100%;
-    display: block!important;
-  }
-  footer div {
-    margin: 3rem 0 1rem 4rem!important;
-  }
-  #feedbackContent {
-    float: left;
   }
 }

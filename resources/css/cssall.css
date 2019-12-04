@@ -110,3 +110,47 @@ a:hover {
   padding: 1%;
   resize: none;
 }
+/* Footer */
+footer {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+}
+footer div {
+  margin: 5rem 0 3rem 8rem;
+  display: inline-block;
+  vertical-align: top;
+}
+footer h4 {
+  color: gray;
+}
+footer ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+footer li {
+  margin-top: 1rem;
+}
+#copyright {
+  font-size: 15px;
+  position: absolute;
+  display: inline-block;
+  margin: auto;
+  bottom: 1rem;
+  right: 1rem;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+@media screen and (min-width:0px) and (max-width:1000px) {
+  footer {
+    float: left;
+    width: 100%;
+    display: block!important;
+  }
+  footer div {
+    margin: 3rem 0 1rem 4rem!important;
+  }
+}

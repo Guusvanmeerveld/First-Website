@@ -24,7 +24,7 @@ navigation.prepend(hamburger)
 // Search
 var search = c("input")
 search.className = "searchBar"
-search.placeholder = "Vul een zoek opdracht of url in"
+search.placeholder = "Enter a searchterm or url"
 search.type = "text"
 navigation.appendChild(search)
 

@@ -8,7 +8,6 @@
 	<meta name="author" content="Guus van Meerveld">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Home</title>
-	<link rel="stylesheet" href="/resources/css/shortcuts.css">
 	<link rel="stylesheet" href="/css.css">
 	<link rel="stylesheet" href="/resources/css/cssall.css">
 	<link rel="stylesheet" href="/resources/css/navbar.css">
@@ -19,55 +18,32 @@
 
 <body>
 
-	<section class="box">
-		<!-- Clock -->
-		<div id="timeBox">
-			<p id="hours" class="time">uren</p><p id="mins" class="time">:minuten</p><p id="secs" class="time">:seconden</p><br>
-			<p id="date">datum</p>
-		</div> <br>
+	<div class="box mainContent">
 
-		<span class="shortcuts" id="shortcuts">
-			<button onclick="window.open('https://www.youtube.com/')">
-				<img src="/resources/img/youtube.png" alt="">Youtube
-			</button>
-			<button onclick="window.open('https://pantarijn.magister.net')">
-				<img src="/resources/img/magister.png" alt="">Magister
-			</button>
-			<button onclick="window.open('https://onedrive.live.com/about/en-us/signin/')">
-				<img src="/resources/img/onedrive.png" alt="">Onedrive
-			</button>
-			<button onclick="window.open('https://codepanta.nl/login/index.php')">
-				<img src="/resources/img/codepanta.png" alt="">Codepanta
-			</button>
-			<button onclick="window.open('https://reddit.com')">
-				<img src="/resources/img/reddit.png" alt="">Reddit
-			</button>
-			<button onclick="window.open('https://open.spotify.com/browse/featured')">
-				<img src="/resources/img/spotify.png" alt="">Spotify
-			</button>
-			<button onclick="window.open('https://w3schools.com')">
-				<img src="/resources/img/w3schools.png" alt="">W3Schools
-			</button>
-			<button onclick="window.open('https://maps.google.com')">
-				<img src="/resources/img/googlemaps.png" alt="">Maps
-			</button>
-			<button onclick="window.open('https://translate.google.com')">
-				<img src="/resources/img/googletranslate.png" alt="">Translate
-			</button>
-		</span>
+	<h1 class="name"><img src="/resources/img/favicon.ico" class="logo" alt="logo">Guus van Meerveld</h1>
 
-		<span class="shortcuts">
-			<button onclick="openMenu()" title="Voeg je eigen shortcut toe">
-				<img src="/resources/img/cross.png" alt="">Voeg toe
-			</button>
-		</span>
+	<button class="keepclicking" onclick="window.open('/playground', '_self')" title="Test your HTML live at playground!">
+		<h1 class="playground">Want to test your HTML code?</h1>
+		<i class="fas fa-code fa-8x code"></i>
+	</button>
+	<button class="keepclicking" onclick="window.open('/minify', '_self')" title="Minify your HTML/CSS/JavaScript code!">
+		<i class="fas fa-cut fa-8x cut"></i>
+		<h1 class="minify">Need to minify your code?</h1>
+	</button>
 
-	</section>
+	</div>
 
 	<!-- Triangle -->
 	<svg>
 		<polygon points="0,5 0,2000 300,5"/>
 	</svg>
+
+	<!-- About -->
+	<div class="about">
+			<h1 class="head">This website is built for those who like to code.</h1>
+			<h1 class="head">And it is built by those who like to code</h1>
+			<h1 class="head" style="border:0;">Suggest things you would like to see at <a href="/contact" style="text-decoration:underline!important;">contact</a></h1>
+	</div>
 
 	<!-- Footer -->
   <footer>
@@ -103,22 +79,10 @@
 
 	</footer>
 
-	<!-- Add shortcut Menu -->
-	<div id="addShortcutMenu" class="box menu hidden lowerIndex">
-		<h1 id='menuTitle'>Maak je eigen shortcut</h1>
-		<h4>Bedenk een naam voor je shortcut</h4><br>
-		<input type='text' class='input inputMenu' id='shortcutName'><br>
-		<h4>Geef de link van je shortcut</h4><br>
-		<input type='text' class='input inputMenu' id='shortcutLink'>
-		<button class='button' onclick="createShortcut()" id='shortcutCreateButton'>Voeg toe</button>
-		<button class="cancelButton" onclick="closeMenu()" id="shortcutCancelButton">Cancel</button>
-	</div>
-
 	<!-- Javascript -->
 	<script src="/resources/js/navbar.json.js"></script>
 	<script src="/resources/js/insertNavbar.js"></script>
 	<script src="/js.js"></script>
-	<script src="/resources/js/shortcuts.js"></script>
 	<script src="/resources/js/javall.js"></script>
 
 </body>

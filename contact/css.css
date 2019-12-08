@@ -22,12 +22,14 @@
   margin: 0 auto;
   margin-bottom: 1rem;
 }
+.form span {
+  color:#c42222;
+}
 .submit {
-  position: absolute;
-  width: 6rem;
+  width: 90%;
   height: 40px;
-  right: 2rem;
-  bottom: 1rem;
+  display: block;
+  margin: -2rem auto 1rem auto;
 }
 .dataInput {
   width: 90%;

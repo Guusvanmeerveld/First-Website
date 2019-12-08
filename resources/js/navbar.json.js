@@ -1,31 +1,32 @@
 Navbar = [
   {
     icon: "/resources/img/favicon.ico",
-    desc: "Ga naar de homepagina",
+    desc: "Go to the homepage",
     link: "/"
   },
   {
-    name: "Playground",
-    desc: "Test je html live!",
-    link: "/playground"
-  },
-  {
     name: "Contact",
-    desc: "Neem contact met mij op",
+    desc: "Contact me",
     link: "/contact"
   },
   {
     name: "Feedback",
-    desc: "Feedback voor deze website",
+    desc: "Feedback for this website",
     link: "/feedback"
   },
   {
-    name: "Games",
-    desc: "Hier kan je spelletjes spelen",
+    name: "Tools",
+    desc: "Tools for programming",
     dropdown: [
       {
-        name: "Vuurjongen en Watermeisje 4",
-        link: "/vuurjongen-en-watermeisje-4"
+        name: "Playground",
+        desc: "Test your HTML live!",
+        link: "/playground"
+      },
+      {
+        name: "Minifier",
+        desc: "Minify your HTML/CSS/JavaScript",
+        link: "/minify"
       }
     ]
   }

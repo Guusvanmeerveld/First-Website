@@ -32,17 +32,18 @@ function autoRun() {
 
 function showCode(lang) {
   $(".langButton").css("background-color", "#3b3c45")
+  $(".langButton").css("border", "none")
   $(".langInput").css("display", "none")
   if (lang == "html") {
-    d("htmlButton").style = "background-color: #27282e;"
+    d("htmlButton").style = "background-color: #27282e;border-bottom: white 2px solid;"
     d("htmlInput").style = "display: block"
   }
   else if (lang == "css") {
-    d("cssButton").style = "background-color: #27282e;"
+    d("cssButton").style = "background-color: #27282e;border-bottom: white 2px solid;"
     d("cssInput").style = "display: block"
   }
   else {
-    d("jsButton").style = "background-color: #27282e;"
+    d("jsButton").style = "background-color: #27282e;border-bottom: white 2px solid;"
     d("jsInput").style = "display: block"
   }
 }

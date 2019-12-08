@@ -53,7 +53,7 @@
 .navList:hover .fas {
   transform: rotate(-180deg);
 }
-.lowerIndex {
+/* .lowerIndex {
   z-index: -1!important;
 }
 .opacityMenu {
@@ -66,7 +66,7 @@
   background-color: black;
   display: inline-block;
   z-index: 1;
-}
+} */
 .fa-bars {
   display: none!important;
 }

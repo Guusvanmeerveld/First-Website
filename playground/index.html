@@ -23,9 +23,9 @@
                 <button onclick="showCode()" class="langButton" id="jsButton">JS</button>
                 <button class="options" id="autoRun" onclick="autoRun()">AUTORUN</button>
                 <button onclick="updateCode('run')" class="options">RUN</button>
-                <textarea class="input langInput" id="htmlInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea>
-                <textarea class="input langInput" id="cssInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea>
-                <textarea class="input langInput" id="jsInput" onkeyup="updateCode('autoRun')" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="htmlInput" onkeyup="updateCode('autoRun')" placeholder="Type your HTML here" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="cssInput" onkeyup="updateCode('autoRun')" placeholder="Type your CSS here" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="jsInput" onkeyup="updateCode('autoRun')" placeholder="Type your JavaScript here" spellcheck="false"></textarea>
             </div>
         </div>
         <iframe id="htmlOutput"></iframe>

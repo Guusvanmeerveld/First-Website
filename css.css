@@ -1,22 +1,70 @@
 /* Main CSS */
-section {
-  float: left;
-  display: inline-block;
-  width: 50%;
-  padding-top: 55px;
-  height: 100vh;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-section::-webkit-scrollbar {
-  display: none;
-}
 svg {
+  position: relative;
+  z-index: -1;
   padding-top: 49px;
   fill: #454752;
   stroke-width: 1;
   stroke: #454752;
   height: 100vh;
+}
+.mainContent {
+  overflow: visible;
+  float: left;
+  padding: 6rem 0 0 2rem;
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
+}
+.mainContent::-webkit-scrollbar {
+  display: none;
+}
+/* Splash */
+.logo {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 2rem;
+}
+.name {
+  font-size: 4rem;
+  white-space: nowrap;
+}
+.keepclicking {
+  background-color: #3b3c45;
+  width: 40rem;
+  height: 12rem;
+  transition: background-color .4s;
+  border: 0;
+  color: white;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-top: 3rem;
+}
+.keepclicking:hover {
+  background-color: #33343b;
+}
+.keepclicking:focus {
+  outline: 0;
+}
+.playground {
+  border-right: white 4px solid;
+  width: 20rem;
+  display: inline-block;
+}
+.code {
+  vertical-align: top;
+  margin-left: 3.7rem;
+  margin-top: 10px;
+}
+.minify {
+  border-left: white 4px solid;
+  width: 15rem;
+  margin-left: 3rem;
+  display: inline-block;
+}
+.cut {
+  vertical-align: top;
+  margin-top: 10px;
 }
 /* Clock */
 #timeBox {
@@ -33,6 +81,24 @@ svg {
   font-size: 2rem;
   margin: 0;
 }
+/* About */
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  float: left;
+  height: 35vh;
+  background-color: #33353d;
+}
+.head {
+  padding: 1rem;
+  text-align: center;
+  display: inline-block;
+  width: 25rem;
+  border-right: 4px solid white;
+}
 /* Mobile support */
 @viewport {
   width: device-width;
@@ -40,7 +106,7 @@ svg {
 }
 /* Support for mobile devices */
 @media screen and (min-width:0px) and (max-width:1000px) {
-  section {
+  .mainContent {
     width: 100%!important;
   }
   svg {

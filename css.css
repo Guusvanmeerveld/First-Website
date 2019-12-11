@@ -7,6 +7,8 @@
 .name {
   margin: 0 auto;
   width: 80%;
+  font-size: 4rem;
+  white-space: nowrap;
   text-align: center;
   height: 5rem;
 }
@@ -26,64 +28,27 @@
   width: 12rem;
   height: 14rem;
 }
-/* Splash */
-.logo {
-  width: 8rem;
-  height: 8rem;
-  margin-right: 2rem;
+.aboutPages{
+  height: 50vh;
+  float: left;
+  background-color: #33353d;
+  width: 100%;
+  box-shadow: 0 -1px 15px 5px hsla(0, 0%, 0%, 0.8);
 }
-.name {
-  font-size: 4rem;
-  white-space: nowrap;
-}
-.keepclicking {
-  background-color: #3b3c45;
-  width: 40rem;
-  height: 12rem;
-  transition: background-color .4s;
-  border: 0;
-  color: white;
-  padding: 1rem;
-  border-radius: .5rem;
-  margin-top: 3rem;
-}
-.keepclicking:hover {
-  background-color: #33343b;
-}
-.keepclicking:focus {
-  outline: 0;
-}
-.playground {
-  border-right: white 4px solid;
-  width: 20rem;
-  display: inline-block;
-}
-.code {
-  vertical-align: top;
-  margin-left: 3.7rem;
-  margin-top: 10px;
-}
-.minify {
-  border-left: white 4px solid;
-  width: 15rem;
-  margin-left: 3rem;
-  display: inline-block;
-}
-.cut {
-  vertical-align: top;
-  margin-top: 10px;
+.infoBlock {
+  width: 50%;
+
 }
 /* About */
 .about {
   position: relative;
-  box-shadow: 0 -1px 15px 5px hsla(0, 0%, 0%, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   float: left;
   height: 35vh;
-  background-color: #33353d;
+  background-color: #454752;
 }
 .head {
   padding: 1rem;

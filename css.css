@@ -1,23 +1,34 @@
 /* Main CSS */
-svg {
-  position: relative;
-  z-index: -1;
-  padding-top: 49px;
-  fill: #454752;
-  stroke-width: 1;
-  stroke: #454752;
-  height: 100vh;
-}
 .mainContent {
-  overflow: visible;
-  float: left;
-  padding: 6rem 0 0 2rem;
-  display: inline-block;
-  width: 50%;
-  height: 100vh;
+  padding-top: 10rem;
+  width: 100%;
+  height: 85vh;
 }
-.mainContent::-webkit-scrollbar {
-  display: none;
+.name {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  height: 5rem;
+}
+.launchRocket:focus + #rocket {
+  animation-name: launchRocket;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes launchRocket {
+  from {
+    top: 85vh
+  }
+  to {
+    top: -20vh
+  }
+}
+#rocket {
+  position: absolute;
+  top: 100vh;
+  left: calc(50% - 7rem);
+  width: 12rem;
+  height: 14rem;
 }
 /* Splash */
 .logo {
@@ -66,24 +77,10 @@ svg {
   vertical-align: top;
   margin-top: 10px;
 }
-/* Clock */
-#timeBox {
-   margin-left: 1rem;
-   padding: 1rem;
-   font-family: 'Open Sans', sans-serif;
-}
-.time {
-  display: inline-block;
-  font-size: 7rem;
-  margin: 0;
-}
-#date {
-  font-size: 2rem;
-  margin: 0;
-}
 /* About */
 .about {
   position: relative;
+  box-shadow: 0 -1px 15px 5px hsla(0, 0%, 0%, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;

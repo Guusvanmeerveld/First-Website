@@ -4,6 +4,6 @@ var g = document.querySelector.bind(document);
 function selectCode(source) {
   switch (source){
     case: html
-    
+
   }
 }

@@ -89,11 +89,11 @@
   .navList{
     padding: 10px 0 10px 1rem!important;
     margin: 0!important;
-    border-top: #454752 2px solid;
+    border-top: #33353d 2px solid;
   }
   .navigation li{
     display: none;
-    background-color: #101012;
+    background-color: #212126;
   }
   .navigation .fa-bars:hover + ul li, .navigation ul:hover li {
     display: block!important;

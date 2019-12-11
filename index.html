@@ -13,36 +13,46 @@
 	<link rel="stylesheet" href="/resources/css/navbar.css">
 	<script src="https://kit.fontawesome.com/340f4d917c.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-	<div class="box mainContent">
-
-	<h1 class="name"><img src="/resources/img/favicon.ico" class="logo" alt="logo">Guus van Meerveld</h1>
-
-	<button class="keepclicking" onclick="window.open('/playground', '_self')" title="Test your HTML live at playground!">
-		<h1 class="playground">Want to test your HTML code?</h1>
-		<i class="fas fa-code fa-8x code"></i>
-	</button>
-	<button class="keepclicking" onclick="window.open('/minify', '_self')" title="Minify your HTML/CSS/JavaScript code!">
-		<i class="fas fa-cut fa-8x cut"></i>
-		<h1 class="minify">Need to minify your code?</h1>
-	</button>
-
+	<!-- Main Content -->
+	<div class="mainContent">
+		<h1 class="name">Guus van Meerveld</h1>
+		<div class="quickButtons">
+			<button class="goButton">Ga naar Playground</button>
+			<button class="goButton" style="margin-left: 5rem;">Ga naar Minify</button>
+		</div>
+		<a class="slideUp" href="#2" id="2"><i class="fas fa-caret-up fa-2x"></i></a>
+		<!-- <img src="/resources/img/rocket.png" alt="rocket" id="rocket"> -->
 	</div>
-
-	<!-- Triangle -->
-	<svg>
-		<polygon points="0,5 0,2000 300,5"/>
-	</svg>
 
 	<!-- About -->
 	<div class="about">
-			<h1 class="head">This website is built for those who like to code.</h1>
-			<h1 class="head">And it is built by those who like to code</h1>
-			<h1 class="head" style="border:0;">Suggest things you would like to see at <a href="/contact" style="text-decoration:underline!important;">contact</a></h1>
+		<h1 class="infoBlockMe">Mijn naam is Guus van Meerveld</h1>
+		<h1 class="infoBlockMe">Ik ben 15 jaar oud en heb deze website gebouwd</h1>
+		<h1 class="infoBlockMe" style="border:0;">Als je suggesties hebt, ga dan naar <a href="/contact" style="text-decoration:underline!important;">contact</a></h1>
+	</div>
+
+	<!-- Info about the pages on the site -->
+	<div class="aboutPages">
+		<div class="infoBlockPages">
+			<div class="infoHeadPages">
+				<h2>Het doel van deze website is om handig tools aan te bieden.</h2>
+			</div>
+			<div class="infoTextPages">
+				<h2></h2>
+			</div>
+		</div><div class="infoBlockPages">
+			<div class="infoHeadPages">
+				<h2>Yeet</h2>
+			</div>
+			<div class="infoTextPages">
+				<h2>Yote</h2>
+			</div>
+		</div>
 	</div>
 
 	<!-- Footer -->
@@ -75,7 +85,7 @@
 			</ul>
 		</div>
 
-		<p id="copyright">&#169; 2019 Guus van Meerveld</p>
+		<p class="copyright">&#169; 2019 Guus van Meerveld</p>
 
 	</footer>
 

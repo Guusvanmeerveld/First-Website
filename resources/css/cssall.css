@@ -64,6 +64,9 @@ a {
 a:hover {
   color: gray!important;
 }
+button:focus {
+  outline: 0!important;
+}
 /* Standard block styling */
 .box {
   background-color: #454752;
@@ -75,7 +78,7 @@ a:hover {
   color: white;
   outline: 0!important;
   border-radius: 0.2rem;
-  transition: border .3s ease, background-color .3s;
+  transition: background-color .3s;
 }
 .button:hover {
   background-color: #427a71;
@@ -91,7 +94,7 @@ a:hover {
   color: white;
   outline: 0!important;
   border-radius: 0.2rem;
-  transition: border .3s ease, background-color .3s, border .3s;
+  transition: background-color .3s, border .3s;
 }
 .cancelButton:hover {
   background-color: #a3281f;
@@ -134,7 +137,7 @@ footer ul {
 footer li {
   margin-top: 1rem;
 }
-#copyright {
+.copyright {
   font-size: 15px;
   position: absolute;
   display: inline-block;
@@ -142,7 +145,6 @@ footer li {
   bottom: 1rem;
   right: 1rem;
   white-space: nowrap;
-  vertical-align: baseline;
 }
 @media screen and (min-width:0px) and (max-width:1000px) {
   footer {

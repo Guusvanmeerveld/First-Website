@@ -1,85 +1,90 @@
 /* Main CSS */
-svg {
-  position: relative;
-  z-index: -1;
-  padding-top: 49px;
-  fill: #454752;
-  stroke-width: 1;
-  stroke: #454752;
-  height: 100vh;
-}
 .mainContent {
-  overflow: visible;
-  float: left;
-  padding: 6rem 0 0 2rem;
-  display: inline-block;
-  width: 50%;
+  padding-top: 10rem;
+  width: 100%;
   height: 100vh;
-}
-.mainContent::-webkit-scrollbar {
-  display: none;
-}
-/* Splash */
-.logo {
-  width: 8rem;
-  height: 8rem;
-  margin-right: 2rem;
 }
 .name {
+  margin: 0 auto;
+  width: 80%;
   font-size: 4rem;
   white-space: nowrap;
+  text-align: center;
+  height: 5rem;
 }
-.keepclicking {
-  background-color: #3b3c45;
-  width: 40rem;
-  height: 12rem;
-  transition: background-color .4s;
+.quickButtons {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.goButton {
+  background-color: #33353d;
   border: 0;
+  margin-top: 8rem;
+  border-radius: .3rem;
   color: white;
-  padding: 1rem;
-  border-radius: .5rem;
-  margin-top: 3rem;
-}
-.keepclicking:hover {
-  background-color: #33343b;
-}
-.keepclicking:focus {
-  outline: 0;
-}
-.playground {
-  border-right: white 4px solid;
-  width: 20rem;
-  display: inline-block;
-}
-.code {
-  vertical-align: top;
-  margin-left: 3.7rem;
-  margin-top: 10px;
-}
-.minify {
-  border-left: white 4px solid;
-  width: 15rem;
-  margin-left: 3rem;
-  display: inline-block;
-}
-.cut {
-  vertical-align: top;
-  margin-top: 10px;
-}
-/* Clock */
-#timeBox {
-   margin-left: 1rem;
-   padding: 1rem;
-   font-family: 'Open Sans', sans-serif;
-}
-.time {
-  display: inline-block;
-  font-size: 7rem;
-  margin: 0;
-}
-#date {
+  border-bottom: #26282f 5px solid;
+  padding: 2rem;
   font-size: 2rem;
-  margin: 0;
+}
+.goButton:active {
+  border: 0;
+  border-top: #26282f 5px solid;
+}
+.slideUp {
+  position: absolute;
+  padding: .7rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  left: calc(50% - 2rem);
+  top: 90vh;
+}
+.slideUp:hover {
+  color: white!important;
+}
+/* .name:hover + #rocket {
+  animation-name: launchRocket;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes launchRocket {
+  from {top: 100vh}
+  to {top: -20vh}
+}
+#rocket {
+  position: absolute;
+  top: 100vh;
+  z-index: -1;
+  left: calc(50% - 7rem);
+  width: 12rem;
+  height: 14rem;
+} */
+.aboutPages {
+  height: 30vh;
+  float: left;
+  background-color: #33353d;
+  width: 100%;
+  box-shadow: 0 -1px 15px 5px hsla(0, 0%, 0%, 0.8);
+}
+.infoBlockPages {
+  width: 50%;
+  border-right: #454752 5px solid;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  float: left;
+}
+.infoHeadPages {
+  margin-left: 1rem;
+  padding-right: 1rem;
+  border-right: 5px solid white;
+}
+.infoTextPages {
+  margin-left: 2rem;
 }
 /* About */
 .about {
@@ -89,13 +94,14 @@ svg {
   align-items: center;
   width: 100%;
   float: left;
-  height: 35vh;
-  background-color: #33353d;
+  height: 30vh;
+  background-color: #454752;
 }
-.head {
+.infoBlockMe {
   padding: 1rem;
   text-align: center;
   display: inline-block;
+  height: 10rem;
   width: 25rem;
   border-right: 4px solid white;
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".slideUp").on('click', function(event) {
+  $(".slideDown").on('click', function(event) {
     if (this.hash !== "") {
       var hash = this.hash;
       $('html, body').animate({

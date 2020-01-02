@@ -62,3 +62,15 @@ function updateCode(source) {
 emmet.require('textarea').setup({
 use_tab: true       // expand abbreviations by Tab key
 });
+
+if (localStorage.getItem("showHeadsUpPlayground") == undefined) {
+  d("headsUp").style.visibility = "visible"
+  d("headsUp").style.height = "13rem"
+}
+function hideHeadsUp() {
+  d("headsUp").style.height = "0"
+}
+function removeHeadsUp() {
+  hideHeadsUp();
+  localStorage.setItem("showHeadsUpPlayground", "1")
+}

@@ -15,6 +15,18 @@
 </head>
 
 <body>
+    <div id="headsUp">
+      <div class="welcome">
+      <h5>Welkom bij Playground,</h5>
+      <h5>Hier kan je experimenteren met HTML, CSS en JavaScript om een website te bouwen.</h5>
+      <h5>De knop autorun zorgt ervoor de je code automatisch uitgevoert wordt zodra je het typt.</h5>
+      <h5>Zodra je op run klikt, wordt je code voor je opgeslagen zodat je het niet kwijtraakt.</h5>
+      </div>
+      <div class="removeOptions">
+      <button class="hideHeadsUp button" onclick="hideHeadsUp()">Begrepen</button>
+      <h5 class="removeHeadsUp" onclick="removeHeadsUp()">Laat mij dit niet meer zien</h5>
+      </div>
+    </div>
     <div class="content">
         <div class="codeContent">
             <div>
@@ -23,9 +35,9 @@
                 <button onclick="showCode()" class="langButton" id="jsButton">JS</button>
                 <button class="options" id="autoRun" onclick="autoRun()">AUTORUN</button>
                 <button onclick="updateCode('run')" class="options">RUN</button>
-                <textarea class="input langInput" id="htmlInput" onkeyup="updateCode('autoRun')" placeholder="Type your HTML here" spellcheck="false"></textarea>
-                <textarea class="input langInput" id="cssInput" onkeyup="updateCode('autoRun')" placeholder="Type your CSS here" spellcheck="false"></textarea>
-                <textarea class="input langInput" id="jsInput" onkeyup="updateCode('autoRun')" placeholder="Type your JavaScript here" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="htmlInput" onkeyup="updateCode('autoRun')" placeholder="Type hier je HTML" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="cssInput" onkeyup="updateCode('autoRun')" placeholder="Type hier je CSS" spellcheck="false"></textarea>
+                <textarea class="input langInput" id="jsInput" onkeyup="updateCode('autoRun')" placeholder="Type hier je JavaScript" spellcheck="false"></textarea>
             </div>
         </div>
         <iframe id="htmlOutput"></iframe>

@@ -15,6 +15,16 @@ Navbar = [
     link: "/feedback"
   },
   {
+    name: "Wireframe",
+    desc: "De wireframe voor deze website",
+    link: "/wireframe"
+  },
+  {
+    name: "Gallerij",
+    desc: "Verzameling van foto's",
+    link: "/gallery"
+  },
+  {
     name: "Tools",
     desc: "Tools for programming",
     dropdown: [

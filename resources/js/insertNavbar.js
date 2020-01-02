@@ -21,31 +21,31 @@ var hamburger = c("i")
 hamburger.className = "fas fa-bars fa-2x"
 navigation.prepend(hamburger)
 
-// Search
-var search = c("input")
-search.className = "searchBar"
-search.placeholder = "Enter a searchterm or url"
-search.type = "text"
-navigation.appendChild(search)
-
-g(".searchBar").addEventListener("keyup",searchEnter)
-function searchEnter(key) {
-  if(key.key == "Enter") {
-    var search = g(".searchBar").value;
-    var containsDot = search.indexOf(".");
-    if (search !== "") {
-      if (containsDot > -1) {
-        open("http://" + search);
-      }
-      else {
-        open("https://www.google.com/search?q=" + search);
-      }
-    }
-  }
-  if (key.key == "Escape") {
-    closeSearch()
-  }
-}
+// // Search
+// var search = c("input")
+// search.className = "searchBar"
+// search.placeholder = "Enter a searchterm or url"
+// search.type = "text"
+// navigation.appendChild(search)
+//
+// g(".searchBar").addEventListener("keyup",searchEnter)
+// function searchEnter(key) {
+//   if(key.key == "Enter") {
+//     var search = g(".searchBar").value;
+//     var containsDot = search.indexOf(".");
+//     if (search !== "") {
+//       if (containsDot > -1) {
+//         open("http://" + search);
+//       }
+//       else {
+//         open("https://www.google.com/search?q=" + search);
+//       }
+//     }
+//   }
+//   if (key.key == "Escape") {
+//     closeSearch()
+//   }
+// }
 
 // Create Navbar
 Navbar.forEach(i=>{

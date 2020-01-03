@@ -26,16 +26,16 @@ Navbar = [
   },
   {
     name: "Tools",
-    desc: "Tools for programming",
+    desc: "Tools voor programmeren",
     dropdown: [
       {
         name: "Playground",
-        desc: "Test your HTML live!",
+        desc: "Test je HTML live!",
         link: "/playground"
       },
       {
         name: "Minifier",
-        desc: "Minify your HTML/CSS/JavaScript",
+        desc: "Minify je HTML/CSS/JavaScript",
         link: "/minify"
       }
     ]

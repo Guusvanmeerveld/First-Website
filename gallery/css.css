@@ -4,9 +4,15 @@
 body {
   background-color: #212126!important;
 }
+button {
+  border: 0;
+  padding: 0;
+  margin-top: 8px!important;
+}
 .gallery {
   margin-top: calc(3rem + 55px);
   text-align: center;
+  font-size: 2vw;
 }
 .rowImg {
   display: flex;
@@ -20,6 +26,23 @@ body {
   padding: 0 4px;
 }
 .columnImg img {
-  margin-top: 8px;
   width: 100%;
+}
+@media screen and (min-width:500px) and (max-width:1000px) {
+  .columnImg {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .gallery {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width:0px) and (max-width:500px) {
+  .columnImg {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .gallery {
+    font-size: 5vw;
+  }
 }

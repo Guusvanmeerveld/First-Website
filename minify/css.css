@@ -42,10 +42,14 @@
   background-color: rgb(59, 60, 69);
   border: 0;
   color: white;
+  transition: .3s background-color;
   float: left;
   padding: 1rem 1.5rem;
 }
-#run {
+.langButton:hover {
+  background-color: #27282e;
+}
+.run {
   float: right;
 }
 @media screen and (min-width:0px) and (max-width:1000px) {

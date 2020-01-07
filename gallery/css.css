@@ -1,3 +1,32 @@
+#headsUp {
+  visibility: hidden;
+  transition: height .3s;
+  background-color: #454752;
+  box-shadow: 0 1px 6px 1px hsla(0, 0%, 0%, 0.4);
+  z-index: 3;
+  margin-top: 55px;
+  position: relative;
+}
+.welcome {
+  position: absolute;
+  bottom: 4.5rem;
+  padding-left: 2.5%;
+}
+.removeOptions {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  padding-left: 2.5%;
+}
+.hideHeadsUp {
+  height: 3rem;
+}
+.removeHeadsUp {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 1rem;
+  border-bottom: white 3px dotted;
+}
 * {
   box-sizing: border-box;
 }

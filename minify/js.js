@@ -2,16 +2,18 @@ var d = document.getElementById.bind(document);
 var g = document.querySelector.bind(document);
 
 function selectCode(source) {
-  switch (source) {
-    case html:
+    localStorage.setItem("selectCode", source)
+}
+function runMinify() {
+  var source = localStorage.getItem("selectCode")
+  if (source == "html") {
     minifyHTML();
-      break;
-    case css:
+  }
+  if (source == "css") {
     minifyCSS();
-      break;
-    case js:
+  }
+  if (source == "js") {
     minifyJS();
-      break;
   }
 }
 

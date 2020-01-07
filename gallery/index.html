@@ -14,10 +14,18 @@
 </head>
 <body>
 
-  <h1 class="gallery">
-  Dit is de gallerij voor alle foto's die op deze website gebruikt zijn. (Ik heb ze niet zelf gemaakt) <br>
-  Er staan ook nog wat extra foto's bij die ik misschien nog wil gaan gebruiken.
-  </h1>
+  <div id="headsUp">
+    <div class="welcome">
+    <h5>Welkom bij de Gallerij,</h5>
+    <h5>Hier staan alle foto's die op deze website gebruikt zijn.</h5>
+    <h5>Er staan ook foto's tussen die ik nog wil gebruiken.</h5>
+    <h5>Je kan op de foto's klikken om de bron te zien.</h5>
+    </div>
+    <div class="removeOptions">
+    <button class="hideHeadsUp button" onclick="hideHeadsUp()">Begrepen</button>
+    <h5 class="removeHeadsUp" onclick="removeHeadsUp()">Laat mij dit niet meer zien</h5>
+    </div>
+  </div>
 
 <div class="rowImg">
   <div class="columnImg">
@@ -34,6 +42,7 @@
   </div>
 </div>
 
+  <script src="/gallery/js.js"></script>
   <script src="/resources/js/navbar.json.js"></script>
 	<script src="/resources/js/insertNavbar.js"></script>
 	<script src="/resources/js/javall.js"></script>

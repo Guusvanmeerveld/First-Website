@@ -20,6 +20,7 @@
 }
 .hideHeadsUp {
   height: 3rem;
+
 }
 .removeHeadsUp {
   cursor: pointer;
@@ -33,7 +34,7 @@
 body {
   background-color: #212126!important;
 }
-button {
+.rowImg button {
   border: 0;
   padding: 0;
   margin-top: 8px!important;
@@ -45,6 +46,7 @@ button {
 }
 .rowImg {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 4px;
   margin-top: 3rem;

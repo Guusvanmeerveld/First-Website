@@ -1,0 +1,126 @@
+/* Main CSS */
+.mainContent {
+  padding-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-image: url("/resources/img/roadwoods.jpg");
+  background-size: cover;
+}
+.name {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 4rem;
+  white-space: nowrap;
+  text-align: center;
+}
+.welcome {
+  display: block;
+  margin: 2vh auto;
+  width: 80%;
+  text-align: center;
+}
+.slideDown {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  left: calc(50% - 1.75rem);
+  top: 80vh;
+}
+.slideDown:hover {
+  color: white!important;
+}
+/* About Me*/
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 -1px 15px 5px hsla(0, 0%, 0%, 0.8);
+  float: left;
+  background-color: #33353d;
+}
+.infoBlockMe {
+  height: 30vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  border-right: #454752 2px solid;
+}
+.infoBlockMe h1 {
+  text-align: center;
+  max-width: 80%;
+}
+.secondBackground {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  float: left;
+  background-image: url("/resources/img/roadwoodsred.jpg");
+  background-size: cover;
+}
+/* About Website */
+.aboutPages {
+  float: left;
+  background-color: #33353d;
+  width: 100%;
+  box-shadow: 0 -1px 15px 5px hsla(0, 0%, 0%, 0.8);
+}
+.infoBlockPages {
+  width: 50%;
+  border-right: #454752 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  float: left;
+}
+.infoTextPages {
+  width: 70%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+/* Mobile support */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@media screen and (min-width:0px) and (max-width:1500px) {
+  .infoBlockMe h1 {
+    font-size: 1.8rem;
+  }
+  .infoBlockPages h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Support for mobile devices */
+@media screen and (min-width:0px) and (max-width:1000px) {
+  .name {
+    font-size: 9vw;
+  }
+  .welcome {
+    font-size: 8vw;
+  }
+  .infoBlockPages {
+    width: 100%;
+    border: 0;
+    border-bottom: #454752 2px solid;
+  }
+  .infoBlockMe {
+    height: 20vh;
+    border: 0;
+    border-bottom: #454752 2px solid;
+    width: 100%;
+  }
+  .about {
+    display: block;
+  }
+}

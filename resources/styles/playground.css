@@ -1,0 +1,91 @@
+
+#headsUp {
+  visibility: hidden;
+  transition: height .3s;
+  background-color: #454752;
+  box-shadow: 0 1px 6px 1px hsla(0, 0%, 0%, 0.4);
+  z-index: 3;
+  margin-top: 55px;
+  position: relative;
+}
+.welcome {
+  position: absolute;
+  bottom: 4.5rem;
+  padding-left: 2.5%;
+}
+.removeOptions {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  padding-left: 2.5%;
+}
+.hideHeadsUp {
+  height: 3rem;
+}
+.removeHeadsUp {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 1rem;
+  border-bottom: white 3px dotted;
+}
+.content {
+  width: 100%;
+  height: 61.7rem;
+}
+.content div {
+  float: left;
+}
+.codeContent {
+  height: 100%;
+  width: 50%;
+  background-color: #222226;
+}
+.codeContent textarea {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+.codeContent div {
+  margin-left: calc(50% - 45%);
+  width: 90%;
+  height: 85%;
+}
+.codeContent button {
+  background-color: #3b3c45;
+  border: 0;
+  color: white;
+  margin-top: 2rem;
+  float: left;
+  transition: background-color .3s;
+  width: 6rem;
+  height: 3rem;
+}
+.codeContent button:hover {
+  background-color: #27282e;
+}
+.codeContent button:focus {
+  outline: 0;
+}
+.options {
+  float: right!important;
+}
+#htmlOutput {
+  background-color: white;
+  height: 100%;
+  border: 0;
+  width: 50%;
+  float: left;
+}
+@media screen and (min-width:0px) and (max-width:1079px) {
+  .codeContent {
+    display: block!important;
+    width: 100%;
+  }
+  .codeContent button {
+    width: 4rem!important;
+    font-size: 11px;
+  }
+  iframe {
+    width: 100%!important;
+  }
+}

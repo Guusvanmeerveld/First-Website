@@ -60,19 +60,3 @@ Navbar.forEach(i=>{
     }
   navbarList.appendChild(navList);
 })
-var c = document.createElement.bind(document);
-var d = document.getElementById.bind(document);
-var g = document.querySelector.bind(document);
-
-// Insert nav tag
-var navigation = c("nav")
-  navigation.className = "navigation"
-var navbarList = c("ul")
-  navbarList.className = "navbarList"
-  navigation.appendChild(navbarList)
-  document.body.appendChild(navigation)
-
-// Hamburger Menu
-var hamburger = c("i")
-hamburger.className = "fas fa-bars fa-2x"
-navigation.prepend(hamburger)
